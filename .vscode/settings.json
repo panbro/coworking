@@ -1,6 +1,6 @@
 {
   "files.autoSave": "onFocusChange",
-  "editor.fontSize": 12,
+  "editor.fontSize": 14,
   "editor.tabSize": 2,
   "workbench.iconTheme": "material-icon-theme",
   "window.zoomLevel": 1,
