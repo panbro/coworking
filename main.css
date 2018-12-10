@@ -1,0 +1,496 @@
+@font-face {
+  font-family: 'GothamPro';
+  src: url('./fonts/GothamPro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  src: url('./fonts/GothamPro-Bold.ttf') format ('truetype');
+  /*не нашел работающих woff или woff2, оставил ttf*/
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  src: url('./fonts/GothamPro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./fonts/opensans-bold-webfont.woff2') format('woff2'), url('./fonts/opensans-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "GothamPro", Helvetica, sans-serif;
+  margin: 0;
+  line-height: 1.42;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* height: 100%; */
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+h2 {
+  margin: 0 0 62px 10px;
+  font-family: "GothamPro", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 49px;
+}
+
+/* .wrapper {
+  min-height: calc(2944 - 80px);
+} */
+
+.header {
+  position: relative;
+  height: 435px;
+  background: #27273e;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.header__container {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+}
+
+.logo, .logo__image-header {
+  top: 13px;
+  left: 19px;
+}
+
+.contacts {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  text-align: right;
+}
+
+.contacts__phone {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: right;
+  font-size: 21px;
+}
+
+.contacts__chedule {
+  top: 46px;
+  color: rgba(236, 30, 121, 0.7);
+  font-family: OpenSans, sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.banner {
+  position: absolute;
+  height: 359px;
+  top: 76px;
+  background: #27273e;
+}
+
+.sidebar {
+  width: 195px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 70px;
+}
+
+.menu__link {
+  color: #ec1e79;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 26px;
+  margin-left: 15px;
+}
+
+.menu__link:hover {
+  color: #000;
+}
+
+.menu__link:before {
+  content: "";
+  display: inline-block;
+  background: center center no-repeat;
+  vertical-align: top;
+  width: 22px;
+  height: 18px;
+  margin-right: 19px;
+}
+
+.menu__item_active .menu__link {
+  color: #000;
+}
+
+.menu__link_main:before {
+  background: center center no-repeat;
+}
+
+.menu__link_main:hover:before {
+  background-image: url('./img/icons/menu/main-hover.png');
+}
+
+.menu__item_active .menu__link_main:before {
+  background-image: url('./img/icons/menu/main-hover.png');
+}
+
+.menu__link_feed:before {
+  background-image: url('./img/icons/menu/feed.png');
+}
+
+.menu__link_feed:hover:before {
+  background-image: url('./img/icons/menu/feed-hover.png');
+}
+
+.menu__item_active .menu__link_feed:before {
+  background-image: url('./img/icons/menu/feed-hover.png');
+}
+
+.menu__link_wallet:before {
+  background-image: url('./img/icons/menu/wallet.png');
+}
+
+.menu__link_wallet:hover:before {
+  background-image: url('./img/icons/menu/wallet-hover.png');
+}
+
+.menu__item_active .menu__link_wallet:before {
+  background-image: url('./img/icons/menu/wallet-hover.png');
+}
+
+section {
+  margin-top: 55px;
+  margin-bottom: 25px;
+}
+
+.page-content {
+  width: 880px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.features-section {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.feature__item {
+  display: inline-block;
+  width: 250px;
+  text-align: center;
+  position: relative;
+}
+
+.feature__title {
+  top: 110px;
+  font-family: "GothamPro", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 110px 0 0 0;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+}
+
+.feature__title:before {
+  content: "";
+  background: #27273e;
+  border-radius: 50%;
+  position: absolute;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 42px;
+  background-repeat: no-repeat;
+}
+
+.feature__unique-fig:before {
+  content: "";
+  width: 68px;
+  height: 68px;
+}
+
+.feature__pic {
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 42px;
+  position: absolute;
+  z-index: 10;
+}
+
+.feature__unique-pic {
+  background-image: url('./img/icons/features/flower.png');
+}
+
+.feature__premium-pic {
+  background-image: url('./img/icons/features/fav-star.png');
+}
+
+.feature__luxury-pic {
+  background-image: url('./img/icons/features/palette.png');
+}
+
+.feature__premium-fig:before {
+  content: "";
+  width: 72px;
+  height: 72px;
+}
+
+.feature__luxury-fig:before {
+  content: "";
+  width: 66px;
+  height: 66px;
+}
+
+.feature__description {
+  font-size: 18px;
+  top: 110px;
+  text-transform: none;
+  margin: 27px auto 25px; 
+  margin-top: 27px;
+  text-align: center;
+  align: center;
+  line-height: 2;
+  width: 220px;
+}
+
+li .feature__list-point:before {
+  content: "•";
+  color: red;
+  margin-left: 14px;
+  padding-right: 27px;
+}
+
+.feature__description li {
+  text-align: left;
+}
+
+.news-section {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.news__item {
+  display: inline-block;
+  width: 880px;
+  text-align: left;
+  position: relative;
+  padding: 30px 0;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+li.news__item:last-child {
+  border: none;
+}
+
+.news__thumb {
+  display: inline-block;
+  width: 160px;
+}
+
+.news__thumb-pic {
+  display: inline-block;
+  width: 160px;
+  border-radius: 50%;
+}
+
+.news__content {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  display: inline-block;
+  position: relative;
+  left: 20px;
+  vertical-align: top;
+  width: 700px;
+  font-size: 18px;
+}
+
+time.news__date {
+  color: #656464;
+  font-size: 14px;
+  line-height: 1.42;
+}
+
+.news__author {
+  line-height: 1.42;
+  font-weight: bold;
+  padding-bottom: 7px;
+}
+
+.news__text {
+  line-height: 1.52;
+  font-weight: 300;
+}
+
+.pagination {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  width: 880px;
+  font-size: 14px;
+}
+
+.pagination__display {
+  display: inline-block;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: 300;
+  color: #656464;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.pagination__controls,
+.pagination__controls li {
+  display: inline-block;
+}
+
+.pagination__item {
+  width: 25px;
+  display: inline-block;
+}
+
+li .pagination__link {
+  text-decoration: none;
+}
+
+.pagination__link {
+  font-weight: bold;
+}
+
+.pagination__link,
+.pagination__prev {
+  color: #221f1f;
+}
+
+.pagination__prev {
+  color: #656464;
+  padding-right: 10px;
+}
+
+.pagination__next {
+  padding-left: 3px;
+}
+
+.pagination-active {
+  color: white;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  background-color: #27273e;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.footer {
+  height: 77px;
+  background: #27273e;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.footer__container {
+  position: relative;
+  height: 77px;
+  vertical-align: middle;
+}
+
+.work-author {
+  position: absolute;
+  display: inline-block;
+  left: 30px;
+  width: 270px;
+  top: 8px;
+  color: white;
+  font-family: "GothamPro", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+a.loftschool-link {
+  color: white;
+  font-weight: bold;
+}
+
+.work__author-name {
+  font-weight: bold;
+}
+
+.logo__image-footer {
+  position: absolute;
+  display: inline-block;
+  width: 99px;
+  height: 51px;
+  left: 500px;
+}
+
+.socials {
+  display: inline-block;
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  right: 25px;
+  font-family: "GothamPro", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.socials__text {
+  position: absolute;
+  width: 180px;
+  display: inline-block;
+  color: white;
+  position: absolute;
+  display: inline-block;
+  top: 10px;
+}
+
+.socials__names {
+  position: absolute;
+  background: #ec1e79;
+  margin-top: 30px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-repeat: repeat-x;
+}
