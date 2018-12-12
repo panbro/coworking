@@ -39,28 +39,24 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* height: 100%; */
-}
-
-ul {
-  margin: 0;
-  padding: 0;
 }
 
 ul li {
   list-style: none;
+  display: inline-block;
 }
 
-h2 {
-  margin: 0 0 62px 10px;
+.title {
+  margin: 0 0 37px 0;
   font-family: "GothamPro", Helvetica, sans-serif;
   font-weight: bold;
   font-size: 49px;
 }
 
-/* .wrapper {
-  min-height: calc(2944 - 80px);
-} */
+.wrapper {
+  min-height: 77px;
+  min-width: 1100px;
+}
 
 .header {
   position: relative;
@@ -71,24 +67,27 @@ h2 {
 .container {
   margin: 0 auto;
   width: 1100px;
+  height: 100%;
 }
 
 .header__container {
   position: relative;
+  height: 100%;
 }
 
 .logo {
   position: absolute;
 }
 
-.logo, .logo__image-header {
+.logo,
+.logo__image-header {
   top: 13px;
   left: 19px;
 }
 
 .contacts {
   position: absolute;
-  top: 15px;
+  top: 14px;
   right: 20px;
   text-align: right;
 }
@@ -97,20 +96,19 @@ h2 {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  text-align: right;
   font-size: 21px;
 }
 
 .contacts__chedule {
-  top: 46px;
   color: rgba(236, 30, 121, 0.7);
   font-family: OpenSans, sans-serif;
   font-weight: bold;
   text-decoration: underline;
   font-size: 14px;
+  margin-top: -3px;
 }
 
-.banner {
+.banner__img {
   position: absolute;
   height: 359px;
   top: 76px;
@@ -121,19 +119,20 @@ h2 {
   width: 195px;
   display: inline-block;
   vertical-align: top;
-  margin-top: 70px;
+  margin-top: 65px;
 }
 
 .menu__link {
   color: #ec1e79;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 12px;
   letter-spacing: 0.1em;
   font-weight: bold;
   display: inline-block;
   margin-bottom: 26px;
-  margin-left: 15px;
-}
+  margin-left: 12px;
+  }
 
 .menu__link:hover {
   color: #000;
@@ -146,7 +145,9 @@ h2 {
   vertical-align: top;
   width: 22px;
   height: 18px;
-  margin-right: 19px;
+  margin-right: 14px;
+  margin-left: 5px;
+
 }
 
 .menu__item_active .menu__link {
@@ -189,9 +190,9 @@ h2 {
   background-image: url('./img/icons/menu/wallet-hover.png');
 }
 
-section {
-  margin-top: 55px;
-  margin-bottom: 25px;
+.features-section {
+  margin-top: 52px;
+  margin-bottom: 41px;
 }
 
 .page-content {
@@ -206,14 +207,14 @@ section {
 }
 
 .feature__item {
-  display: inline-block;
-  width: 250px;
+  width: 243px;
   text-align: center;
   position: relative;
+  min-height: 300px;
+  margin-right: 22px;
 }
 
 .feature__title {
-  top: 110px;
   font-family: "GothamPro", Helvetica, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -221,26 +222,6 @@ section {
   text-align: center;
   font-size: 11px;
   letter-spacing: 0.2em;
-}
-
-.feature__title:before {
-  content: "";
-  background: #27273e;
-  border-radius: 50%;
-  position: absolute;
-  vertical-align: middle;
-  margin-left: auto;
-  margin-right: auto;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 42px;
-  background-repeat: no-repeat;
-}
-
-.feature__unique-fig:before {
-  content: "";
-  width: 68px;
-  height: 68px;
 }
 
 .feature__pic {
@@ -251,28 +232,45 @@ section {
   transform: translate(-50%, -50%);
   top: 42px;
   position: absolute;
-  z-index: 10;
 }
 
-.feature__unique-pic {
+.feature__pic:before {
+  border-radius: 50%;
+  opacity: 0.9;
+  position: absolute;
+  vertical-align: middle;
+  margin-left: -100%;
+  margin-top: -50%;
+  z-index: -10;
+  background: #27273e center center no-repeat;
+}
+
+.feature__unique-pic:before {
   background-image: url('./img/icons/features/flower.png');
 }
 
-.feature__premium-pic {
+.feature__premium-pic:before {
   background-image: url('./img/icons/features/fav-star.png');
 }
 
-.feature__luxury-pic {
+.feature__luxury-pic:before {
   background-image: url('./img/icons/features/palette.png');
 }
 
-.feature__premium-fig:before {
+.feature__unique-pic:before {
+  content: "";
+  width: 68px;
+  height: 68px;
+  z-index: -10;
+}
+
+.feature__premium-pic:before {
   content: "";
   width: 72px;
   height: 72px;
 }
 
-.feature__luxury-fig:before {
+.feature__luxury-pic:before {
   content: "";
   width: 66px;
   height: 66px;
@@ -282,11 +280,10 @@ section {
   font-size: 18px;
   top: 110px;
   text-transform: none;
-  margin: 27px auto 25px; 
-  margin-top: 27px;
-  text-align: center;
+  margin: 14px auto 26px auto;
+   text-align: center;
   align: center;
-  line-height: 2;
+  line-height: 1.8;
   width: 220px;
 }
 
@@ -294,11 +291,12 @@ li .feature__list-point:before {
   content: "•";
   color: red;
   margin-left: 14px;
-  padding-right: 27px;
+  margin-right: 27px;
 }
 
-.feature__description li {
+.feature__list {
   text-align: left;
+  line-height: 1.9;
 }
 
 .news-section {
@@ -311,7 +309,7 @@ li .feature__list-point:before {
   width: 880px;
   text-align: left;
   position: relative;
-  padding: 30px 0;
+  margin: 22px -4px;
   border-bottom: 2px solid #f5f5f5;
 }
 
@@ -328,14 +326,16 @@ li.news__item:last-child {
   display: inline-block;
   width: 160px;
   border-radius: 50%;
+  
 }
 
 .news__content {
   font-family: 'Roboto', Helvetica, sans-serif;
   display: inline-block;
   position: relative;
-  left: 20px;
+  left: 15px;
   vertical-align: top;
+  top: -5px;
   width: 700px;
   font-size: 18px;
 }
@@ -349,19 +349,21 @@ time.news__date {
 .news__author {
   line-height: 1.42;
   font-weight: bold;
-  padding-bottom: 7px;
+  margin-bottom: 7px;
 }
 
 .news__text {
   line-height: 1.52;
   font-weight: 300;
+  line-height: 1.7;
 }
 
 .pagination {
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   vertical-align: top;
-  margin-top: 70px;
+  margin-top: 32px;
   margin-bottom: 70px;
   width: 880px;
   font-size: 14px;
@@ -369,20 +371,24 @@ time.news__date {
 
 .pagination__display {
   display: inline-block;
+  /*почему inline-block не наследуется от .pagination? */
   font-family: 'Roboto', Helvetica, sans-serif;
   font-weight: 300;
   color: #656464;
-  margin-right: 20px;
+  margin-right: 18px;
   vertical-align: middle;
+  /*почему middle не наследуется от .pagination? */
 }
 
-.pagination__controls,
-.pagination__controls li {
+.pagination__controls {
   display: inline-block;
+  /*почему inline-block не наследуется от .pagination? */
 }
 
 .pagination__item {
+  margin-right: -4px;
   width: 25px;
+  vertical-align: middle;
   display: inline-block;
 }
 
@@ -397,18 +403,19 @@ li .pagination__link {
 .pagination__link,
 .pagination__prev {
   color: #221f1f;
+  vertical-align: middle;
 }
 
 .pagination__prev {
   color: #656464;
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .pagination__next {
-  padding-left: 3px;
+  margin-left: 10px;
 }
 
-.pagination-active {
+.pagination__link_active {
   color: white;
   width: 25px;
   height: 25px;
@@ -432,21 +439,20 @@ li .pagination__link {
   position: relative;
   height: 77px;
   vertical-align: middle;
+  font-size: 14px;
 }
 
 .work-author {
   position: absolute;
   display: inline-block;
-  left: 30px;
-  width: 270px;
+  left: 19px;
+  width: 280px;
   top: 8px;
   color: white;
-  font-family: "GothamPro", Helvetica, sans-serif;
   font-weight: 300;
-  font-size: 14px;
 }
 
-a.loftschool-link {
+a.work-author__loftschool-link {
   color: white;
   font-weight: bold;
 }
@@ -460,37 +466,49 @@ a.loftschool-link {
   display: inline-block;
   width: 99px;
   height: 51px;
-  left: 500px;
+  left: 480px;
 }
 
 .socials {
   display: inline-block;
   position: absolute;
-  width: 300px;
-  height: 50px;
-  text-align: center;
-  right: 25px;
-  font-family: "GothamPro", Helvetica, sans-serif;
+  text-align: left;
+  top: 15px;
+  right: 24px;
   font-weight: bold;
   font-size: 14px;
 }
 
-.socials__text {
-  position: absolute;
-  width: 180px;
-  display: inline-block;
+.socials__display {
   color: white;
-  position: absolute;
-  display: inline-block;
-  top: 10px;
+  text-align: right;
 }
 
 .socials__names {
-  position: absolute;
-  background: #ec1e79;
-  margin-top: 30px;
-  border-radius: 50%;
+  background: #d4d4d8;
+  margin-top: 7px;
+  margin-right: 2px;
+  display: inline-block;
+  vertical-align: middle;
   width: 20px;
   height: 20px;
-  background-repeat: repeat-x;
+  border-radius: 50%;
+  font-size: 0;
+}
+
+img[class$="img"] {
+  margin-left: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  top: 80%;
+  transform: translate(0, -50%);
+}
+
+.socials__fb-img {
+  margin-left: 7px !important;
+}
+
+.socials__names:hover {
+  background-color: #ec1e79;
 }
