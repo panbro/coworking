@@ -1,0 +1,39 @@
+.footer {
+  background: #27273e;
+}
+
+.footer__container {
+  display: flex;
+  min-height: 77px;
+  flex-direction: row;
+}
+
+.footer__container {
+  display: flex;
+  position: relative;
+  min-height: 77px;
+  /* vertical-align: middle;
+  font-size: 14px; */
+}
+
+.footer__col {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.footer__col-socials {
+  justify-content: flex-end;
+  margin-right: 22px;
+  /* margin-bottom: 13px; */
+}
+
+.footer__col-logo {
+  justify-content: center;
+  /* margin-left: 10px; */
+}
+
+.footer__col-author {
+  margin-left: 20px;
+  line-height: 1.2em;
+}

@@ -1,0 +1,48 @@
+.socials {
+  /* display: inline-block; */
+  /* position: absolute; */
+  text-align: left;
+  top: 15px;
+  right: 24px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.socials__display {
+  color: white;
+  text-align: right;
+}
+
+.socials__names {
+  background: #d4d4d8;
+  margin-top: 7px;
+  margin-right: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0;
+}
+
+.socials__names img[class$="img"] {
+  margin-left: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  /* position: absolute; */
+  /* top: 90%; */
+  transform: translate(0, 65%);
+}
+
+.socials__vk-img {
+  transform: translate(0, 95%) !important;
+}
+
+.socials__fb-img {
+  margin-left: 6.5px !important;
+  transform: translate(0, 25%)  !important;
+}
+
+.socials__names:hover {
+  background-color: #ec1e79;
+}

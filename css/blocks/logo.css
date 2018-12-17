@@ -1,0 +1,24 @@
+/* .logo {
+} */
+
+/* .logo,
+.logo__image-header {
+  top: 13px;
+  left: 19px;
+} */
+
+/* .logo__image-footer {
+  position: absolute;
+  display: inline-block;
+  width: 99px;
+  height: 51px;
+  left: 480px;
+} */
+
+.footer__col .footer__col-logo {
+ align-self: center; 
+}
+
+.footer__col-logo-img {
+  align-self: center;
+}

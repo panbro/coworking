@@ -1,0 +1,11 @@
+.banner {
+  height: 359px;
+  background: #27273e;
+  align-self: flex-start;
+ }
+
+.banner__img {
+  height: 359px;
+  background: #27273e;
+  margin-left: -19px;
+  }

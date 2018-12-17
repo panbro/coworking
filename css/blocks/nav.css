@@ -1,0 +1,91 @@
+.sidebar {
+  display: flex;
+  width: 18%;
+  /* display: inline-block;
+  vertical-align: top; */
+  /* margin-top: 65px; */
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+}
+
+.menu__link {
+  color: #ec1e79;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  display: inline-block;
+ }
+
+ .menu__item {
+
+  margin-bottom: 28px;
+  /* margin-left: 12px; */
+ }
+
+.menu__link:hover {
+  color: #000;
+}
+
+.menu__link:before {
+  content: "";
+  display: inline-block;
+  background: center center no-repeat;
+  vertical-align: top;
+  width: 22px;
+  height: 18px;
+  margin-right: 14px;
+  margin-left: 19px;
+}
+
+.menu__item_active .menu__link {
+  color: #000;
+}
+
+/* .menu__link_main:before {
+  background: center center no-repeat;
+} */
+
+.menu__link_main:before {
+  background-image: url('../../img/icons/menu/main.png');
+}
+
+.menu__link .menu__link_main:before,
+.menu__link_main:hover:before {
+  background-image: url('../../img/icons/menu/main-unactive.png');
+}
+
+.menu__link_feed:before {
+  background-image: url('../../img/icons/menu/feed.png');
+}
+
+.menu__link .menu__link_feed:before,
+.menu__link_feed:hover:before {
+  background-image: url('../../img/icons/menu/feed-unactive.png');
+}
+
+.menu__link_wallet:before {
+  background-image: url('../../img/icons/menu/wallet.png');
+}
+
+.menu__link .menu__link_wallet:before,
+.menu__link_wallet:hover:before {
+  background-image: url('../../img/icons/menu/wallet-unactive.png');
+}
+
+.menu__item_active .menu__link_main:before {
+  background-image: url('../../img/icons/menu/main-unactive.png');
+}
+
+.menu__item_active .menu__link_feed:before {
+  background-image: url('../../img/icons/menu/feed-unactive.png');
+}
+
+.menu__item_active .menu__link_wallet:before {
+  background-image: url('../../img/icons/menu/wallet-unactive.png');
+}

@@ -1,0 +1,95 @@
+/* .reviews-section {
+  margin-top: 52px;
+  margin-bottom: 41px;
+}
+
+.reviews-section {
+  display: inline-block;
+  vertical-align: top;
+} */
+
+.reviews__item {
+  display: flex;
+  
+  /* min-width: 243px; */
+  /* text-align: center; */
+  /* min-height: 300px; */
+  /* margin-right: 22px; */
+}
+
+.reviews__thumb {
+  width: 30%;
+}
+
+.reviews__content {
+  width: 70%;
+}
+
+.reviews__thumb-pic {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.reviews__avatar-pic {
+  display: block;
+  max-width: 100%;
+}
+
+/* .reviews__title {
+  font-family: "GothamPro", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 110px 0 0 0;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+} */
+
+/* .reviews__pic {
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 42px;
+  position: absolute;
+} */
+
+/* .reviews__pic:before {
+  border-radius: 50%;
+  opacity: 0.9;
+  position: absolute;
+  vertical-align: middle;
+  margin-left: -100%;
+  margin-top: -50%;
+  z-index: -10;
+  background: #27273e center center no-repeat;
+} */
+
+/* .reviews__unique-pic:before {
+  background-image: url('../../img/icons/reviews/flower.png');
+} */
+
+/* .reviews__description {
+  font-size: 18px;
+  top: 110px;
+  text-transform: none;
+  margin: 14px auto 26px auto;
+  text-align: center;
+  align: center;
+  line-height: 1.8;
+  width: 220px;
+} */
+
+/* li .reviews__list-point:before {
+  content: "•";
+  color: red;
+  margin-left: 14px;
+  margin-right: 27px;
+} */
+
+/* .reviews__list {
+  text-align: left;
+  line-height: 1.9;
+} */

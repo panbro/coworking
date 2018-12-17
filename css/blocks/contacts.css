@@ -1,0 +1,22 @@
+.contacts {
+  text-align: right;
+  margin-top: -11px;
+}
+
+.contacts__phone {
+
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 21px;
+  
+}
+
+.contacts__chedule {
+  color: rgba(236, 30, 121, 0.7);
+  font-family: OpenSans, sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 14px;
+  margin-top: -3px;
+}

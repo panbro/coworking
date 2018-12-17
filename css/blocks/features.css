@@ -1,0 +1,101 @@
+.features-section {
+  margin-bottom: 41px;
+}
+
+.features-section {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.feature__item {
+  width: 243px;
+  text-align: center;
+  position: relative;
+  min-height: 300px;
+  margin-right: 22px;
+}
+
+.feature__title {
+  font-family: "GothamPro", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 110px 0 0 0;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+}
+
+.feature__pic {
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 42px;
+  position: absolute;
+}
+
+.feature__pic:before {
+  border-radius: 50%;
+  opacity: 0.9;
+  position: absolute;
+  vertical-align: middle;
+  margin-left: -100%;
+  margin-top: -50%;
+  z-index: -10;
+  background: #27273e center center no-repeat;
+}
+
+.feature__unique-pic:before {
+  background-image: url('../../img/icons/features/flower.png');
+}
+
+.feature__premium-pic:before {
+  background-image: url('../../img/icons/features/fav-star.png');
+}
+
+.feature__luxury-pic:before {
+  background-image: url('../../img/icons/features/palette.png');
+}
+
+.feature__unique-pic:before {
+  content: "";
+  width: 68px;
+  height: 68px;
+  z-index: -10;
+}
+
+.feature__premium-pic:before {
+  content: "";
+  width: 72px;
+  height: 72px;
+}
+
+.feature__luxury-pic:before {
+  content: "";
+  width: 66px;
+  height: 66px;
+}
+
+.feature__description {
+  font-size: 18px;
+  top: 110px;
+  text-transform: none;
+  margin: 14px auto 26px auto;
+  text-align: center;
+  align: center;
+  line-height: 1.8;
+  width: 220px;
+}
+
+li .feature__list-point:before {
+  content: "•";
+  color: red;
+  margin-left: 14px;
+  margin-right: 27px;
+}
+
+.feature__list {
+  text-align: left;
+  line-height: 1.9;
+}

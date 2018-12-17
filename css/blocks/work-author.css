@@ -1,0 +1,18 @@
+.work-author {
+  /* position: absolute; */
+  /* display: inline-block; */
+  left: 19px;
+  width: 320px;
+  top: 8px;
+  color: white;
+  font-weight: 300;
+}
+
+a.work-author__loftschool-link {
+  color: white;
+  font-weight: bold;
+}
+
+.work__author-name {
+  font-weight: bold;
+}

@@ -3,49 +3,65 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=1100, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Коворкинг твоей мечты</title>
-  <link rel="stylesheet" href="main.css" type="text/css" />
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
   <div class="wrapper">
+    <div class="wrapper__content">
 
-    <header class="header">
-      <div class="container header__container">
-        <a href="#" class="logo"><img src="./img/logo/logo.png" alt="logo" class="logo__image-header"></a>
-        <adress class="contacts">
-          <a href="tel:88000039210" class="contacts__phone">8 (800) 00-392-10</a>
-          <div class="contacts__chedule">График работы</div>
-        </adress>
-        <div class="banner">
-          <img src="./img/decor/banner.jpg" class="banner__img alt="banner">
+      <header class="header">
+        <div class="container header__container">
+          <div class="header__col">
+            <a href="#" class="logo"><img src="./img/logo/logo.png" alt="logo" class="logo__image-header"></a>
+          </div>
+          <div class="header__col header__col_align-right">
+            <adress class="contacts">
+              <a href="tel:88000039210" class="contacts__phone">8 (800) 00-392-10</a>
+              <div class="contacts__chedule">График работы</div>
+            </adress>
+          </div>
+          <div class="header__col header__col-banner">
+
+            <!-- Баннер -->
+            <section class="banner">
+              <div class="container banner__container">
+                <div class="banner">
+                  <img src="./img/decor/banner.jpg" class="banner__img" alt="banner" />
+                </div>
+              </div>
+            </section>
+          </div>
+          
         </div>
-      </div>
-    </header>
+      </header>
+      <div class="transparent-marg"></div>
+      <!--костыль - дополнительный отступ-->
 
-    <!--Основная страница (page)-->
+      <!--Основная страница (page)-->
 
-    <div class="page">
-      <div class="container">
+      <div class="container page__container">
+        <!-- <div class="container"> -->
 
-        <!--САЙДБАР-->
+        <!--Сайдбар-->
 
         <aside class="sidebar">
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item menu__item_active">
-                <a href="#" class="menu__link menu__link_main">
+                <a href="./index.html" class="menu__link menu__link_main">
                   Главная </a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link menu__link_feed">
+                <a href="./comments.html" class="menu__link menu__link_feed">
                   Отзывы </a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link menu__link_wallet">
+                <a href="./prices.html" class="menu__link menu__link_wallet">
                   Тарифы </a>
               </li>
             </ul>
@@ -72,7 +88,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="feature__item ">
+                <li class="feature__item">
                   <div class="feature__pic feature__premium-pic"></div>
                   <div class="feature__title feature__premium-fig">Премиум-класс</div>
                   <div class="feature__description">Для любителей хороших впечатлений
@@ -106,7 +122,7 @@
             <ul class="news">
               <li class="news__item">
                 <div class="news__thumb">
-                  <img src="./img/content/news-blackhole.jpg" alt="pic" class="news__thumb-pic">
+                  <img src="./img/content/thumb/news-blackhole.jpg" alt="pic" class="news__thumb-pic">
                 </div>
                 <div class="news__content">
                   <time class="news__date">12.10.2016</time>
@@ -119,7 +135,7 @@
               </li>
               <li class="news__item">
                 <div class="news__thumb">
-                  <img src="./img/content/news-pinkfire.jpg" alt="pic" class="news__thumb-pic">
+                  <img src="./img/content/thumb/news-pinkfire.jpg" alt="pic" class="news__thumb-pic">
                 </div>
                 <div class="news__content">
                   <time class="news__date">01.02.2016</time>
@@ -132,7 +148,7 @@
               </li>
               <li class="news__item">
                 <div class="news__thumb">
-                  <img src="./img/content/news-workplace.jpg" alt="pic" class="news__thumb-pic">
+                  <img src="./img/content/thumb/news-workplace.jpg" alt="pic" class="news__thumb-pic">
                 </div>
                 <div class="news__content">
                   <time class="news__date">22.12.2015</time>
@@ -183,45 +199,52 @@
         </div>
         <!--Закрывает page-content>-->
       </div>
-      <!--Закрывает container-->
+      <!--Закрывает page__container-->
     </div>
-    <!--Закрывает page-->
-
+    <!--закрывает wrapper__content-->
     <!--Здесь Футер-->
-
     <footer class="footer">
       <div class="container footer__container">
 
-        <div class="work-author">
-          Сделано с любовью и старанием на курсе «HTML + CSS» в
-          <a href="https://loftschool.com/" class="work-author__loftschool-link">LoftSchool.</a> Автор работы: <span
-            class="work__author-name">
-            Бродников Сергей</span></div>
+        <div class="footer__col footer__col-author">
+          <div class="work-author">
+            Сделано с любовью и старанием на курсе «HTML + CSS» в
+            <a href="https://loftschool.com/" class="work-author__loftschool-link">LoftSchool.</a> Автор работы: <span
+              class="work__author-name">
+              Бродников Сергей</span></div>
+        </div>
 
-        <a href="#" class="logo"><img src='./img/logo/logo.png' alt="logo" class="logo__image-footer"></a>
+        <div class="footer__col footer__col-logo">
+          <div class="footer__col-logo">
+            <a href="#" class="footer__col-logo-img"><img src='./img/logo/logo.png' alt="logo" class="logo__image-footer"></a>
+          </div>
+        </div>
 
-        <div class="socials">
-          <div class="socials__display">Наши социальные сети</div>
-          <div class="socials__links">
-            <ul class="socials__list">
-              <li class="socials__item">
-                <a href="#" class="socials__names socials__vk"><img src="./img/icons/socials/vk.png" alt="vk" class="socials__vk-img">Vkontake</a>
-              </li>
-              <li class="socials__item"></li>
-              <a href="#" class="socials__names socials__fb"><img src="./img/icons/socials/fb.png" alt="img" class="socials__fb-img">Facebook</a>
-              </li>
-              <li class="socials__item"></li>
-              <a href="#" class="socials__names socials__g-plus"><img src="./img/icons/socials/google.png" alt="img"
-                  class="socials__g-plus-img">Google+</a>
-              </li>
-              <li class="socials__item"></li>
-              <a href="#" class="socials__names socials__twitter"><img src="./img/icons/socials/twitter.png" alt="img"
-                  class="socials__twitter-img">Twitter</a>
-              </li>
-              <li class="socials__item"></li>
-              <a href="#" class="socials__names socials__mail"><img src="./img/icons/socials/mail.png" alt="img" class="socials__mail-img">Mail</a>
-              </li>
-            </ul>
+        <div class="footer__col footer__col-socials">
+          <div class="socials">
+            <div class="socials__display">Наши социальные сети</div>
+            <div class="socials__links">
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a href="#" class="socials__names socials__vk"><img src="./img/icons/socials/vk.png" alt="vk" class="socials__vk-img">Vkontake</a>
+                </li>
+                <li class="socials__item"></li>
+                <a href="#" class="socials__names socials__fb"><img src="./img/icons/socials/fb.png" alt="img" class="socials__fb-img">Facebook</a>
+                </li>
+                <li class="socials__item"></li>
+                <a href="#" class="socials__names socials__g-plus"><img src="./img/icons/socials/google.png" alt="img"
+                    class="socials__g-plus-img">Google+</a>
+                </li>
+                <li class="socials__item"></li>
+                <a href="#" class="socials__names socials__twitter"><img src="./img/icons/socials/twitter.png" alt="img"
+                    class="socials__twitter-img">Twitter</a>
+                </li>
+                <li class="socials__item"></li>
+                <a href="#" class="socials__names socials__mail"><img src="./img/icons/socials/mail.png" alt="img"
+                    class="socials__mail-img">Mail</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

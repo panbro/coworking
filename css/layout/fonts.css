@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'GothamPro';
+  src: url('../../fonts/GothamPro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  src: url('../../fonts/GothamPro-Bold.ttf') format ('truetype');
+  /*не нашел работающих woff или woff2, оставил ttf*/
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  src: url('../../fonts/GothamPro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../../fonts/opensans-bold-webfont.woff2') format('woff2'), url('./fonts/opensans-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
