@@ -1,0 +1,31 @@
+.discount {
+  display: block;
+  width: 100%;
+  margin-bottom: 57px;
+}
+
+.discount__area {
+  background-image: url(../../img/decor/pattern.png);
+  background-repeat: center center no-repeat;
+  background-color: #27273e;
+  display: flex;
+  min-height: 174px;
+  justify-content: center;
+  align-items: center;
+}
+
+.discount__item {
+max-width: 610px;
+}
+
+.discount__text {
+  font-weight: 300;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.67em;
+}
+
+.discount-text_pink {
+  font-weight: bold;
+  color: #ec1e79;
+}

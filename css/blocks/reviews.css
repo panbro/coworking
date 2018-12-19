@@ -1,28 +1,17 @@
-/* .reviews-section {
-  margin-top: 52px;
-  margin-bottom: 41px;
-}
-
-.reviews-section {
-  display: inline-block;
-  vertical-align: top;
-} */
 
 .reviews__item {
   display: flex;
-  
-  /* min-width: 243px; */
-  /* text-align: center; */
-  /* min-height: 300px; */
-  /* margin-right: 22px; */
+  border-bottom: 2px solid #f5f5f5;
+  align-items: flex-start;
+  margin-top: 34px;
 }
 
 .reviews__thumb {
-  width: 30%;
+  width: 21%;
 }
 
 .reviews__content {
-  width: 70%;
+  width: 79%;
 }
 
 .reviews__thumb-pic {
@@ -36,60 +25,27 @@
   max-width: 100%;
 }
 
-/* .reviews__title {
-  font-family: "GothamPro", Helvetica, sans-serif;
+.reviews__date {
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 55px;  
+  color: #656464;
+  vertical-align: top;
+}
+
+.reviews__author {
   font-weight: bold;
-  text-transform: uppercase;
-  margin: 110px 0 0 0;
-  text-align: center;
-  font-size: 11px;
-  letter-spacing: 0.2em;
-} */
-
-/* .reviews__pic {
-  background-repeat: no-repeat;
-  width: 32px;
-  height: 32px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 42px;
-  position: absolute;
-} */
-
-/* .reviews__pic:before {
-  border-radius: 50%;
-  opacity: 0.9;
-  position: absolute;
-  vertical-align: middle;
-  margin-left: -100%;
-  margin-top: -50%;
-  z-index: -10;
-  background: #27273e center center no-repeat;
-} */
-
-/* .reviews__unique-pic:before {
-  background-image: url('../../img/icons/reviews/flower.png');
-} */
-
-/* .reviews__description {
   font-size: 18px;
-  top: 110px;
-  text-transform: none;
-  margin: 14px auto 26px auto;
-  text-align: center;
-  align: center;
-  line-height: 1.8;
-  width: 220px;
-} */
+  /* line-height: 1.67em; */
+}
 
-/* li .reviews__list-point:before {
-  content: "•";
-  color: red;
-  margin-left: 14px;
-  margin-right: 27px;
-} */
+.reviews__text {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 21px;  
+  line-height: 1.7em;
+}
 
-/* .reviews__list {
-  text-align: left;
-  line-height: 1.9;
-} */
+li.reviews__item:last-child {
+  border: none;
+}

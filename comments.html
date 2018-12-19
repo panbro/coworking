@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Коворкинг твоей мечты</title>
+  <title>Отзывы. Коворкинг твоей мечты</title>
   <link rel="stylesheet" href="css/main.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
@@ -75,7 +75,7 @@
           <!--Раздел "Отзывы"-->
 
           <section class="reviews-section">
-            <h2 class="title">Отзывы</h2>
+            <h2 class="title reviews__title">Отзывы</h2>
 
             <ul class="reviews">
               <li class="reviews__item">
@@ -183,26 +183,85 @@
             </div>
           </section>
 
-          <!--Скидка-->
-          <section class="discount">
-            <div class="discount__text">Для наших новых клиентов мы предлагаем скидку 50% на первый день! Приходите,
-              чтобы лично оценить преимущества коворкинга «Воркадиум»!</div>
-          </section>
-
-          <!--Форма отзыва-->
-
-          <section class="formreview">
-
-          </section>
-
         </div>
         <!--Закрывает page-content>-->
       </div>
       <!--Закрывает container-->
     </div>
     <!--Закрывает page-->
+
+    <!--Скидка-->
+    <section class="discount">
+      <div class="discount__area">
+        <div class="discount__item">
+          <div class="discount__text">Для наших новых клиентов мы предлагаем <span class="discount-text_pink">скидку
+              50%</span> на первый день!
+            Приходите, чтобы лично оценить преимущества коворкинга «Воркадиум»!</div>
+        </div>
+      </div>
+    </section>
+
+    <!--Форма отзыва-->
+
+    <div class="container form-review__container">
+      <section class="form-review-section">
+
+        <form action="#" name="form-review" class="form-review__form">
+          <div class="form-review__full-form">
+            <h2 class="title form-review__title">Оставить отзыв</h2>
+            <ul class="form-review__list">
+
+              <div class="form-review__part form-review__introduce">
+                <li class="form-review__item">
+                  <label for="name">
+                    <div class="form-review__label">Ваше имя</div>
+                  </label>
+                  <input type="text" class="form-review__input form-review__name" id="name" name="user-name"
+                    placeholder="Андрей" />
+                </li>
+                <li class="form-review__item">
+                  <label for="vk">
+                    <div class="form-review__label">Ссылка на профиль VK</div>
+                  </label>
+                  <input type="text" class="form-review__input form-review__vk" id="vk" name="vk-link" placeholder="vk.com/example" />
+                </li>
+              </div>
+
+              <div class="form-review__part form-review__textarea">
+                <li class="form-review__item">
+                  <label for="text">
+                    <div class="form-review__label">Текст отзыва</div>
+                  </label>
+                  <textarea type="text" class="form-review__input form-review__textarea" id="text" name="textarea"
+                    placeholder="Мне понравилось" rows="5"></textarea>
+                </li>
+            </ul>
+
+            <div class="form-review__buttons">
+              <div class="form-review__radio">
+                <div class="form-review__radio-title">Отображать фото в отзыве?</div>
+                <input type="radio" id="dispay-avatar-choice_yes" class="form-review__radio-button" name="display-avatar" value="" />
+                <label for="dispay-avatar-choice_yes">
+                  <span class="form-review__radio-icon"></span>Да</label>
+                <input type="radio" id="dispay-avatar-choice_no" class="form-review__radio-button" name="display-avatar" value="" />
+                <label for="dispay-avatar-choice_no">
+                  <span class="form-review__radio-icon"></span>Нет</label>
+              </div>
+              <div class="form-review__button-area">
+                <button type="button" class="form-review__button">Отправить</button>
+              </div>
+            </div>
+          </div>
+
+        </form>
+
+      </section>
+    </div>
   </div>
-  <!--закрывает wrapper__content-->
+
+  <!-- radio -->
+
+  <!-- <div class="form-review__name"></div> -->
 
   <!-- Футер-->
 
