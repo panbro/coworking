@@ -1,5 +1,6 @@
 .section-banner {
   background: #27273e;
+  margin-bottom: 56px;
 }
 
 .banner {
@@ -7,7 +8,6 @@
   height: 359px;
   background: #27273e;
   margin-top: -36px;
-  margin-bottom: 56px;
   justify-content: center;
 }
 
