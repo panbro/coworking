@@ -17,7 +17,7 @@
       <header class="header">
         <div class="container header__container">
           <div class="header__col">
-            <a href="#" class="logo"><img src="./img/logo/logo.png" alt="logo" class="logo__image-header"></a>
+            <a href="#" class="logo"><img src="./img/logo/logo.png" alt="logo" class="logo__image"></a>
           </div>
           <div class="header__col header__col_align-right">
             <adress class="contacts">
@@ -153,7 +153,7 @@
               <div class="pagination__display">Страница 1 из 7</div>
               <div class="pagination__controls">
                 <ul class="pagination__list">
-                  <li> <a href="#" class="pagination__link pagination__prev">&lt;</a>
+                  <li class="pagination__prev"> <a class="pagination__link" href="#">&lt;</a>
                   </li>
                   <li class="pagination__item">
                     <a href="#" class="pagination__link pagination__link_active">1</a>
@@ -176,7 +176,7 @@
                   <li class="pagination__item">
                     <a href="#" class="pagination__link">7</a>
                   </li>
-                  <li><a href="#" class="pagination__link pagination__next">&gt;</a>
+                  <li class="pagination__next"><a class="pagination__link" href="#">&gt;</a>
                   </li>
                 </ul>
               </div>
@@ -192,12 +192,9 @@
 
     <!--Скидка-->
     <section class="discount">
-      <div class="discount__area">
-        <div class="discount__item">
-          <div class="discount__text">Для наших новых клиентов мы предлагаем <span class="discount-text_pink">скидку
-              50%</span> на первый день!
-            Приходите, чтобы лично оценить преимущества коворкинга «Воркадиум»!</div>
-        </div>
+      <div class="container discount__container">
+        <div class="discount__text">Для наших новых клиентов мы предлагаем <span class="discount-text_pink">скидку
+            50%</span> на первый день! Приходите, чтобы лично оценить преимущества коворкинга «Воркадиум»!</div>
       </div>
     </section>
 
@@ -206,62 +203,62 @@
     <div class="container form-review__container">
       <section class="form-review-section">
 
-        <form action="#" name="form-review" class="form-review__form">
-          <div class="form-review__full-form">
+        <div class="form-review">
+          <form action="#" name="form-review" class="form-review__form">
             <h2 class="title form-review__title">Оставить отзыв</h2>
-            <ul class="form-review__list">
+            <div class="form-review__wrapper">
 
               <div class="form-review__part form-review__introduce">
-                <li class="form-review__item">
+                <div class="form-review__item">
                   <label for="name">
                     <div class="form-review__label">Ваше имя</div>
+                    <input type="text" class="form-review__input" id="name" name="user-name" placeholder="Андрей" />
                   </label>
-                  <input type="text" class="form-review__input form-review__name" id="name" name="user-name"
-                    placeholder="Андрей" />
-                </li>
-                <li class="form-review__item">
+                </div>
+                <div class="form-review__item">
                   <label for="vk">
                     <div class="form-review__label">Ссылка на профиль VK</div>
+                    <input type="text" class="form-review__input" id="vk" name="vk-link" placeholder="vk.com/example" />
                   </label>
-                  <input type="text" class="form-review__input form-review__vk" id="vk" name="vk-link" placeholder="vk.com/example" />
-                </li>
+                </div>
               </div>
 
-              <div class="form-review__part form-review__textarea">
-                <li class="form-review__item">
+              <div class="form-review__part form-review__rewiev-text">
+                <div class="form-review__item">
                   <label for="text">
                     <div class="form-review__label">Текст отзыва</div>
+                    <textarea type="text" class="form-review__input form-review__textarea" id="text" name="textarea"
+                      placeholder="Мне понравилось" rows="5"></textarea>
                   </label>
-                  <textarea type="text" class="form-review__input form-review__textarea" id="text" name="textarea"
-                    placeholder="Мне понравилось" rows="5"></textarea>
-                </li>
-            </ul>
-
-            <div class="form-review__buttons">
-              <div class="form-review__radio">
-                <div class="form-review__radio-title">Отображать фото в отзыве?</div>
-                <input type="radio" id="dispay-avatar-choice_yes" class="form-review__radio-button" name="display-avatar" value="" />
-                <label for="dispay-avatar-choice_yes">
-                  <span class="form-review__radio-icon"></span>Да</label>
-                <input type="radio" id="dispay-avatar-choice_no" class="form-review__radio-button" name="display-avatar" value="" />
-                <label for="dispay-avatar-choice_no">
-                  <span class="form-review__radio-icon"></span>Нет</label>
+                </div>
               </div>
-              <div class="form-review__button-area">
-                <button type="button" class="form-review__button">Отправить</button>
+
+              <div class="form-review__buttons">
+                <div class="form-review__radio">
+                  <div class="form-review__radio-title">Отображать фото в отзыве?</div>
+
+                  <label>
+                    <input type="radio" id="dispay-avatar-choice" class="form-review__radio-button" name="display-avatar"
+                      value="" />
+                    <span class="form-review__radio-icon"></span>Да
+                  </label>
+                  <label>
+                    <input type="radio" id="dispay-avatar-choice" class="form-review__radio-button" name="display-avatar"
+                      value="" />
+                    <span class="form-review__radio-icon"></span>Нет</label>
+                </div>
+                <div class="form-review__button-area">
+                  <button type="button" class="form-review__button">Отправить</button>
+                </div>
               </div>
-            </div>
-          </div>
-
-        </form>
-
+              </div>
+          </form>
+        </div>
       </section>
     </div>
   </div>
 
-  <!-- radio -->
 
-  <!-- <div class="form-review__name"></div> -->
 
   <!-- Футер-->
 
@@ -276,9 +273,9 @@
             Бродников Сергей</span></div>
       </div>
 
-      <div class="footer__col footer__col-logo">
-        <div class="footer__col-logo">
-          <a href="#" class="footer__col-logo-img"><img src='./img/logo/logo.png' alt="logo" class="logo__image-footer"></a>
+      <div class="footer__col">
+        <div class="footer__col footer__col_align-center">
+          <a href="#" class="logo"><img src="./img/logo/logo.png" alt="logo" class="logo__image"></a>
         </div>
       </div>
 
@@ -290,19 +287,20 @@
               <li class="socials__item">
                 <a href="#" class="socials__names socials__vk"><img src="./img/icons/socials/vk.png" alt="vk" class="socials__vk-img">Vkontake</a>
               </li>
-              <li class="socials__item"></li>
-              <a href="#" class="socials__names socials__fb"><img src="./img/icons/socials/fb.png" alt="img" class="socials__fb-img">Facebook</a>
+              <li class="socials__item">
+                <a href="#" class="socials__names socials__fb"><img src="./img/icons/socials/fb.png" alt="img" class="socials__fb-img">Facebook</a>
               </li>
-              <li class="socials__item"></li>
-              <a href="#" class="socials__names socials__g-plus"><img src="./img/icons/socials/google.png" alt="img"
-                  class="socials__g-plus-img">Google+</a>
+              <li class="socials__item">
+                <a href="#" class="socials__names socials__g-plus"><img src="./img/icons/socials/google.png" alt="img"
+                    class="socials__g-plus-img">Google+</a>
               </li>
-              <li class="socials__item"></li>
-              <a href="#" class="socials__names socials__twitter"><img src="./img/icons/socials/twitter.png" alt="img"
-                  class="socials__twitter-img">Twitter</a>
+              <li class="socials__item">
+                <a href="#" class="socials__names socials__twitter"><img src="./img/icons/socials/twitter.png" alt="img"
+                    class="socials__twitter-img">Twitter</a>
               </li>
-              <li class="socials__item"></li>
-              <a href="#" class="socials__names socials__mail"><img src="./img/icons/socials/mail.png" alt="img" class="socials__mail-img">Mail</a>
+              <li class="socials__item">
+                <a href="#" class="socials__names socials__mail"><img src="./img/icons/socials/mail.png" alt="img"
+                    class="socials__mail-img">Mail</a>
               </li>
             </ul>
           </div>

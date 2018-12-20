@@ -58,11 +58,15 @@ li .pagination__link {
 }
 
 .pagination__link_active {
-  color: white;
+  color: #ec1e79;
   width: 25px;
   height: 25px;
   line-height: 25px;
   background-color: #27273e;
   border-radius: 3px;
   display: inline-block;
+}
+
+.pagination__link:hover {
+  color:  rgb(236, 30, 121)
 }

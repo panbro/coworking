@@ -1,24 +1,20 @@
 .discount {
-  display: block;
   width: 100%;
   margin-bottom: 57px;
-}
-
-.discount__area {
   background-image: url(../../img/decor/pattern.png);
   background-repeat: center center no-repeat;
   background-color: #27273e;
-  display: flex;
   min-height: 174px;
-  justify-content: center;
-  align-items: center;
 }
 
-.discount__item {
-max-width: 610px;
+.discount__container {
+  max-width: 620px;
+  height: 174px;
+  display: flex;
 }
 
 .discount__text {
+  align-self: center;
   font-weight: 300;
   color: #fff;
   font-size: 18px;

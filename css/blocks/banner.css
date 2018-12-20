@@ -1,11 +1,18 @@
+.section-banner {
+  background: #27273e;
+}
+
 .banner {
+  display: flex;
   height: 359px;
   background: #27273e;
-  align-self: flex-start;
- }
+  margin-top: -36px;
+  margin-bottom: 56px;
+  justify-content: center;
+}
 
 .banner__img {
+  align-items: flex-start;
   height: 359px;
   background: #27273e;
-  margin-left: -19px;
-  }
+}

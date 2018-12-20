@@ -17,7 +17,7 @@
       <header class="header">
         <div class="container header__container">
           <div class="header__col">
-            <a href="#" class="logo"><img src="./img/logo/logo.png" alt="logo" class="logo__image-header"></a>
+            <a href="#" class="logo"><img src="./img/logo/logo.png" alt="logo" class="logo__image"></a>
           </div>
           <div class="header__col header__col_align-right">
             <adress class="contacts">
@@ -25,27 +25,23 @@
               <div class="contacts__chedule">График работы</div>
             </adress>
           </div>
-          <div class="header__col header__col-banner">
-
-            <!-- Баннер -->
-            <section class="banner">
-              <div class="container banner__container">
-                <div class="banner">
-                  <img src="./img/decor/banner.jpg" class="banner__img" alt="banner" />
-                </div>
-              </div>
-            </section>
-          </div>
-          
         </div>
       </header>
-      <div class="transparent-marg"></div>
-      <!--костыль - дополнительный отступ-->
+
+      <!-- Баннер -->
+      
+      <section class="section-banner">
+        <div class="container banner__container">
+          <div class="banner">
+            <img src="./img/decor/banner.jpg" class="banner__img" alt="banner" />
+          </div>
+        </div>
+      </section>
+
 
       <!--Основная страница (page)-->
 
       <div class="container page__container">
-        <!-- <div class="container"> -->
 
         <!--Сайдбар-->
 
@@ -122,9 +118,9 @@
             <ul class="news">
               <li class="news__item">
                 <div class="news__thumb">
-                <div class="news__thumb-pic">
-                  <img src="./img/content/thumb/news-blackhole.jpg" alt="pic" class="news__avatar-pic">
-                </div>
+                  <div class="news__thumb-pic">
+                    <img src="./img/content/thumb/news-blackhole.jpg" alt="pic" class="news__avatar-pic">
+                  </div>
                 </div>
                 <div class="news__content">
                   <time class="news__date">12.10.2016</time>
@@ -137,9 +133,9 @@
               </li>
               <li class="news__item">
                 <div class="news__thumb">
-                <div class="news__thumb-pic">
-                  <img src="./img/content/thumb/news-pinkfire.jpg" alt="pic" class="news__avatar-pic">
-                </div>
+                  <div class="news__thumb-pic">
+                    <img src="./img/content/thumb/news-pinkfire.jpg" alt="pic" class="news__avatar-pic">
+                  </div>
                 </div>
                 <div class="news__content">
                   <time class="news__date">01.02.2016</time>
@@ -152,9 +148,9 @@
               </li>
               <li class="news__item">
                 <div class="news__thumb">
-                <div class="news__thumb-pic">
-                  <img src="./img/content/thumb/news-workplace.jpg" alt="pic" class="news__avatar-pic">
-                </div>
+                  <div class="news__thumb-pic">
+                    <img src="./img/content/thumb/news-workplace.jpg" alt="pic" class="news__avatar-pic">
+                  </div>
                 </div>
                 <div class="news__content">
                   <time class="news__date">22.12.2015</time>
@@ -173,7 +169,7 @@
               <div class="pagination__display">Страница 1 из 7</div>
               <div class="pagination__controls">
                 <ul class="pagination__list">
-                  <li> <a href="#" class="pagination__link pagination__prev">&lt;</a>
+                  <li class="pagination__prev"> <a class="pagination__link" href="#">&lt;</a>
                   </li>
                   <li class="pagination__item">
                     <a href="#" class="pagination__link pagination__link_active">1</a>
@@ -196,7 +192,7 @@
                   <li class="pagination__item">
                     <a href="#" class="pagination__link">7</a>
                   </li>
-                  <li><a href="#" class="pagination__link pagination__next">&gt;</a>
+                  <li class="pagination__next"><a class="pagination__link" href="#">&gt;</a>
                   </li>
                 </ul>
               </div>
@@ -208,6 +204,7 @@
       <!--Закрывает page__container-->
     </div>
     <!--закрывает wrapper__content-->
+    
     <!--Здесь Футер-->
     <footer class="footer">
       <div class="container footer__container">
@@ -220,12 +217,11 @@
               Бродников Сергей</span></div>
         </div>
 
-        <div class="footer__col footer__col-logo">
-          <div class="footer__col-logo">
-            <a href="#" class="footer__col-logo-img"><img src='./img/logo/logo.png' alt="logo" class="logo__image-footer"></a>
+        <div class="footer__col">
+          <div class="footer__col footer__col_align-center">
+            <a href="#" class="logo"><img src="./img/logo/logo.png" alt="logo" class="logo__image"></a>
           </div>
         </div>
-
         <div class="footer__col footer__col-socials">
           <div class="socials">
             <div class="socials__display">Наши социальные сети</div>
@@ -234,18 +230,18 @@
                 <li class="socials__item">
                   <a href="#" class="socials__names socials__vk"><img src="./img/icons/socials/vk.png" alt="vk" class="socials__vk-img">Vkontake</a>
                 </li>
-                <li class="socials__item"></li>
+                <li class="socials__item">
                 <a href="#" class="socials__names socials__fb"><img src="./img/icons/socials/fb.png" alt="img" class="socials__fb-img">Facebook</a>
                 </li>
-                <li class="socials__item"></li>
+                <li class="socials__item">
                 <a href="#" class="socials__names socials__g-plus"><img src="./img/icons/socials/google.png" alt="img"
                     class="socials__g-plus-img">Google+</a>
                 </li>
-                <li class="socials__item"></li>
+                <li class="socials__item">
                 <a href="#" class="socials__names socials__twitter"><img src="./img/icons/socials/twitter.png" alt="img"
                     class="socials__twitter-img">Twitter</a>
                 </li>
-                <li class="socials__item"></li>
+                <li class="socials__item">
                 <a href="#" class="socials__names socials__mail"><img src="./img/icons/socials/mail.png" alt="img"
                     class="socials__mail-img">Mail</a>
                 </li>

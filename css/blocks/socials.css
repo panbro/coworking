@@ -1,9 +1,5 @@
 .socials {
-  /* display: inline-block; */
-  /* position: absolute; */
   text-align: left;
-  top: 15px;
-  right: 24px;
   font-weight: bold;
   font-size: 14px;
 }
@@ -29,8 +25,6 @@
   margin-left: 4px;
   display: inline-block;
   vertical-align: middle;
-  /* position: absolute; */
-  /* top: 90%; */
   transform: translate(0, 65%);
 }
 

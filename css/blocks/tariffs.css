@@ -49,8 +49,8 @@
   width: 250px;
   height: 154px;
   z-index: 5;
-  margin-top: -159px;
   position: absolute;
+  top: 0;
 }
 
 .tariff__img {
