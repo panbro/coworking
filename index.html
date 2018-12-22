@@ -22,18 +22,26 @@
           <div class="header__col header__col_align-right">
             <adress class="contacts">
               <a href="tel:88000039210" class="contacts__phone">8 (800) 00-392-10</a>
-              <div class="contacts__chedule">График работы</div>
+              <div class="schedule">
+                <button class="schedule__btn">График работы</button>
+                <div class="schedule__wrapper">
+                  <!-- <ul class="schedule__block">
+                    <li class="schedule__work">пн-вс: 09:00-20:00</li>
+                    <li class="schedule__lanch">обед: 14:00-14:30</li>
+                  </ul> -->
+                </div>
+              </div>
             </adress>
           </div>
         </div>
       </header>
 
       <!-- Баннер -->
-      
+
       <section class="section-banner">
         <div class="container banner__container">
           <div class="banner">
-            <img src="./img/decor/banner.jpg" class="banner__img" alt="banner" />
+            <img src="./img/decor/banner.jpg" class="banner__img" alt="Баннер коворкинг" />
           </div>
         </div>
       </section>
@@ -49,8 +57,8 @@
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item menu__item_active">
-                <a href="./index.html" class="menu__link menu__link_main">
-                  Главная </a>
+                <span class="menu__link menu__link_main">
+                  Главная </span>
               </li>
               <li class="menu__item">
                 <a href="./comments.html" class="menu__link menu__link_feed">
@@ -119,46 +127,46 @@
               <li class="news__item">
                 <div class="news__thumb">
                   <div class="news__thumb-pic">
-                    <img src="./img/content/thumb/news-blackhole.jpg" alt="pic" class="news__avatar-pic">
+                    <img src="./img/content/thumb/news-blackhole.jpg" alt="аватар новостей" class="news__avatar-pic">
                   </div>
                 </div>
                 <div class="news__content">
                   <time class="news__date">12.10.2016</time>
                   <div class="news__author">Чёрная дыра скидок!</div>
-                  <div class="news__text">Ключевым технологическим партнером GrowUp является дата-центр Миран,
+                  <p class="news__text">Ключевым технологическим партнером GrowUp является дата-центр Миран,
                     расположенный всего лишь в 500 метрах от здания, а значит, скорость интернета будет стабильной в
                     любое время суток. Коворкинг работает в формате 24/7. Используйте шкаф для хранения личных вещей.
-                  </div>
+                  </p>
                 </div>
               </li>
               <li class="news__item">
                 <div class="news__thumb">
                   <div class="news__thumb-pic">
-                    <img src="./img/content/thumb/news-pinkfire.jpg" alt="pic" class="news__avatar-pic">
+                    <img src="./img/content/thumb/news-pinkfire.jpg" alt="аватар новостей" class="news__avatar-pic">
                   </div>
                 </div>
                 <div class="news__content">
                   <time class="news__date">01.02.2016</time>
                   <div class="news__author">Заражай друзей, получай призы!</div>
-                  <div class="news__text">Быть частью сообщества сильных, грамотных и увлеченных своим делом
+                  <p class="news__text">Быть частью сообщества сильных, грамотных и увлеченных своим делом
                     профессионалов - вдохновляет выходить на новые уровни развития.<br /> Регулярно в коворкинге
                     проводятся
-                    лекции, мастер-классы, встречи с инвесторами или менторами для резидентов. </div>
+                    лекции, мастер-классы, встречи с инвесторами или менторами для резидентов. </p>
                 </div>
               </li>
               <li class="news__item">
                 <div class="news__thumb">
                   <div class="news__thumb-pic">
-                    <img src="./img/content/thumb/news-workplace.jpg" alt="pic" class="news__avatar-pic">
+                    <img src="./img/content/thumb/news-workplace.jpg" alt="аватар новостей" class="news__avatar-pic">
                   </div>
                 </div>
                 <div class="news__content">
                   <time class="news__date">22.12.2015</time>
                   <div class="news__author">Новое рабочее место для бизнесменов.</div>
-                  <div class="news__text">Для резидентов коворкинга оборудована не только рабочая зона, но и зона
+                  <p class="news__text">Для резидентов коворкинга оборудована не только рабочая зона, но и зона
                     отдыха. Она включает в себя: кухонную зону и зону релакса.<br />
                     Каждый резидент может беспрепятственно пользоваться кухонным оборудованием: микроволновкой,
-                    чайником, кофе машиной, посудой.</div>
+                    чайником, кофе машиной, посудой.</p>
                 </div>
               </li>
             </ul>
@@ -204,7 +212,7 @@
       <!--Закрывает page__container-->
     </div>
     <!--закрывает wrapper__content-->
-    
+
     <!--Здесь Футер-->
     <footer class="footer">
       <div class="container footer__container">
@@ -219,33 +227,46 @@
 
         <div class="footer__col">
           <div class="footer__col footer__col_align-center">
-            <a href="#" class="logo"><img src="./img/logo/logo.png" alt="logo" class="logo__image"></a>
+            <a href="#" class="logo"><img src="./img/logo/logo.png" alt="Логотип Коворкинг" class="logo__image"></a>
           </div>
         </div>
+
         <div class="footer__col footer__col-socials">
-          <div class="socials">
-            <div class="socials__display">Наши социальные сети</div>
-            <div class="socials__links">
-              <ul class="socials__list">
-                <li class="socials__item">
-                  <a href="#" class="socials__names socials__vk"><img src="./img/icons/socials/vk.png" alt="vk" class="socials__vk-img">Vkontake</a>
-                </li>
-                <li class="socials__item">
-                <a href="#" class="socials__names socials__fb"><img src="./img/icons/socials/fb.png" alt="img" class="socials__fb-img">Facebook</a>
-                </li>
-                <li class="socials__item">
-                <a href="#" class="socials__names socials__g-plus"><img src="./img/icons/socials/google.png" alt="img"
-                    class="socials__g-plus-img">Google+</a>
-                </li>
-                <li class="socials__item">
-                <a href="#" class="socials__names socials__twitter"><img src="./img/icons/socials/twitter.png" alt="img"
-                    class="socials__twitter-img">Twitter</a>
-                </li>
-                <li class="socials__item">
-                <a href="#" class="socials__names socials__mail"><img src="./img/icons/socials/mail.png" alt="img"
-                    class="socials__mail-img">Mail</a>
-                </li>
-              </ul>
+            <div class="socials">
+              <div class="socials__display">Наши социальные сети</div>
+              <div class="socials__links">
+                <ul class="socials__list">
+                  <li class="socials__item">
+                    <a href="#" class="socials__names socials__vk">
+                      <!-- <img src="./img/icons/socials/vk.png" alt="мы во вконтакте"
+                        class="socials__vk-img"> -->
+                        Vkontake</a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__names socials__fb">
+                      <!-- <img src="./img/icons/socials/fb.png" alt="мы в фейсбуке"
+                        class="socials__fb-img"> -->
+                        Facebook</a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__names socials__g-plus">
+                      <!-- <img src="./img/icons/socials/google.png" alt="мы в гугл плюсе"
+                        class="socials__g-plus-img"> -->
+                        Google+</a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__names socials__twitter">
+                      <!-- <img src="./img/icons/socials/twitter.png" alt="мы в твиттере"
+                        class="socials__twitter-img" -->
+                        >Twitter</a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__names socials__mail">
+                      <!-- <img src="./img/icons/socials/mail.png" alt="написать нам на почту"
+                        class="socials__mail-img"> -->
+                        Mail</a>
+                  </li>
+                </ul>
             </div>
           </div>
         </div>

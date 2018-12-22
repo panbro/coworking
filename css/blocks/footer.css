@@ -1,11 +1,16 @@
 .footer {
   background: #27273e;
+  width: 100%;
+  flex: 1;
 }
 
 .footer__container {
   display: flex;
   min-height: 77px;
   flex-direction: row;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 10px 0;
 }
 
 .footer__container {
