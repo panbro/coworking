@@ -63,6 +63,7 @@
 
 .form__input--textarea {
   /* min-height: 90px; */
+  height: 90px;
   resize: vertical;
 }
 
@@ -72,9 +73,9 @@
   justify-content: space-between;
 }
 
-.form__controls-area {
+/* .form__controls-area {
   width: 40%;
-}
+} */
 
 .form-controlls__title {
   font-weight: 300;

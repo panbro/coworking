@@ -25,12 +25,11 @@
               <div class="schedule">
                 <button class="schedule__btn">График работы</button>
                 <div class="schedule__wrapper">
-                  <!-- <ul class="schedule__block">
-                    <li class="schedule__work">пн-вс: 09:00-20:00
+                  <div class="schedule__block">
+                    <div class="schedule__work">пн-вс: 09:00-20:00</div>
+                    <div class="schedule__break">обед: 14:00-14:30</div>
+                  </div>
                 </div>
-                <li class="schedule__lanch">обед: 14:00-14:30</li>
-                </ul> -->
-              </div>
               </div>
             </adress>
           </div>
@@ -193,7 +192,7 @@
       </div>
       <!--Закрывает container-->
     </div>
-    <!--Закрывает page-->
+    <!--Закрывает wrapper__content-->
 
     <!--Скидка-->
     <section class="discount">
@@ -205,79 +204,78 @@
 
     <!--Форма отзыва-->
     <div class="form__wrapper">
-    <div class="container form__container">
-      <section class="form-section">
-        <div class="form">
+      <div class="container form__container">
+        <section class="form-section">
+          <div class="form">
 
-          <form action="#" name="form" class="form__elem">
-            <h2 class="title form-review__title">Оставить отзыв</h2>
-            <div class="form__content">
+            <form action="#" name="form" class="form__elem">
+              <h2 class="title form-review__title">Оставить отзыв</h2>
+              <div class="form__content">
 
-              <div class="form__row">
-                <label class="form__block">
-                  <div class="form__block-title">Ваше имя</div>
-                  <input type="text" class="form__input" name="user-name" placeholder="Андрей" />
-                </label>
-                <label class="form__block">
-                  <div class="form__block-title">Ссылка на профиль VK</div>
-                  <input type="text" class="form__input" name="vk-link" placeholder="vk.com/example" />
-                </label>
-              </div>
-              <div class="form__row">
-                <label class="form__block">
-                  <div class="form__block-title">Текст отзыва</div>
-                  <textarea type="text" class="form__input form__input--textarea" name="textarea" placeholder="Мне понравилось"
-                    rows="5"></textarea>
-                </label>
-              </div>
-            </div>
-
-            <div class="form__buttons">
-
-              <div class="form__controls-area">
-                <div class="form-controlls">
-                  <div class="form-controlls__title">Отображать фото в отзыве?</div>
-                  <div class="form-controlls__buttons">
-
-                    <label class="form-controlls__btn">
-                      <input type="radio" name="answer" class="form-controlls__real-radio">
-                      <div class="form-controlls__fake-radio"></div>
-                      <div class="form-controlls__btn-title">Да</div>
-                    </label>
-
-                    <label class="form-controlls__btn">
-                      <input type="radio" name="answer" class="form-controlls__real-radio">
-                      <div class="form-controlls__fake-radio"></div>
-                      <div class="form-controlls__btn-title">Нет</div>
-                    </label>
-
-                  </div>
+                <div class="form__row">
+                  <label class="form__block">
+                    <div class="form__block-title">Ваше имя</div>
+                    <input type="text" class="form__input" name="user-name" placeholder="Андрей" />
+                  </label>
+                  <label class="form__block">
+                    <div class="form__block-title">Ссылка на профиль VK</div>
+                    <input type="text" class="form__input" name="vk-link" placeholder="vk.com/example" />
+                  </label>
+                </div>
+                <div class="form__row">
+                  <label class="form__block">
+                    <div class="form__block-title">Текст отзыва</div>
+                    <textarea type="text" class="form__input form__input--textarea" name="textarea" placeholder="Мне понравилось"
+                      rows="5"></textarea>
+                  </label>
                 </div>
               </div>
 
-              <div class="form__buttons-area">
-                <!-- вторая кнопка
+              <div class="form__buttons">
+
+                <div class="form__controls-area">
+                  <div class="form-controlls">
+                    <div class="form-controlls__title">Отображать фото в отзыве?</div>
+                    <div class="form-controlls__buttons">
+
+                      <label class="form-controlls__btn">
+                        <input type="radio" name="answer" class="form-controlls__real-radio">
+                        <div class="form-controlls__fake-radio"></div>
+                        <div class="form-controlls__btn-title">Да</div>
+                      </label>
+
+                      <label class="form-controlls__btn">
+                        <input type="radio" name="answer" class="form-controlls__real-radio">
+                        <div class="form-controlls__fake-radio"></div>
+                        <div class="form-controlls__btn-title">Нет</div>
+                      </label>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form__buttons-area">
+                  <!-- вторая кнопка
                   <div class="form__buttons-item">
                   <button type="reset" class="btn btn--bg-white btn--no-icon">Очистить</button>
                 </div> -->
-                <div class="form__buttons-item">
-                  <button type="submit" class="btn">Отправить</button>
+                  <div class="form__buttons-item">
+                    <button type="submit" class="btn">Отправить</button>
+                  </div>
                 </div>
+
               </div>
 
-            </div>
-
-          </form>
-        </div>
-      </section>
+            </form>
+          </div>
+        </section>
+      </div>
     </div>
-  </div>
-  </div>
 
 
 
-  <!--Здесь Футер-->
-  <footer class="footer">
+    <!--Здесь Футер-->
+    <footer class="footer">
       <div class="container footer__container">
 
         <div class="footer__col footer__col-author">
@@ -295,41 +293,41 @@
         </div>
 
         <div class="footer__col footer__col-socials">
-            <div class="socials">
-              <div class="socials__display">Наши социальные сети</div>
-              <div class="socials__links">
-                <ul class="socials__list">
-                  <li class="socials__item">
-                    <a href="#" class="socials__names socials__vk">
-                      <!-- <img src="./img/icons/socials/vk.png" alt="мы во вконтакте"
-                        class="socials__vk-img"> -->
-                        Vkontake</a>
-                  </li>
-                  <li class="socials__item">
-                    <a href="#" class="socials__names socials__fb">
-                      <!-- <img src="./img/icons/socials/fb.png" alt="мы в фейсбуке"
-                        class="socials__fb-img"> -->
-                        Facebook</a>
-                  </li>
-                  <li class="socials__item">
-                    <a href="#" class="socials__names socials__g-plus">
-                      <!-- <img src="./img/icons/socials/google.png" alt="мы в гугл плюсе"
-                        class="socials__g-plus-img"> -->
-                        Google+</a>
-                  </li>
-                  <li class="socials__item">
-                    <a href="#" class="socials__names socials__twitter">
-                      <!-- <img src="./img/icons/socials/twitter.png" alt="мы в твиттере"
-                        class="socials__twitter-img" -->
-                        >Twitter</a>
-                  </li>
-                  <li class="socials__item">
-                    <a href="#" class="socials__names socials__mail">
-                      <!-- <img src="./img/icons/socials/mail.png" alt="написать нам на почту"
-                        class="socials__mail-img"> -->
-                        Mail</a>
-                  </li>
-                </ul>
+          <div class="socials">
+            <div class="socials__display">Наши социальные сети</div>
+            <div class="socials__links">
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a href="#" class="socials__names socials__vk">
+                    <!-- <img src="./img/icons/socials/vk.png" alt="мы во вконтакте"
+                      class="socials__vk-img"> -->
+                    Vkontake</a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__names socials__fb">
+                    <!-- <img src="./img/icons/socials/fb.png" alt="мы в фейсбуке"
+                      class="socials__fb-img"> -->
+                    Facebook</a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__names socials__g-plus">
+                    <!-- <img src="./img/icons/socials/google.png" alt="мы в гугл плюсе"
+                      class="socials__g-plus-img"> -->
+                    Google+</a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__names socials__twitter">
+                    <!-- <img src="./img/icons/socials/twitter.png" alt="мы в твиттере"
+                      class="socials__twitter-img" -->
+                    >Twitter</a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__names socials__mail">
+                    <!-- <img src="./img/icons/socials/mail.png" alt="написать нам на почту"
+                      class="socials__mail-img"> -->
+                    Mail</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

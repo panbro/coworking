@@ -10,96 +10,67 @@
   font-weight: bold;
   text-decoration: none;
   font-size: 21px;
-  }
+}
 
 .schedule {
   position: relative;
 }
 
-.schedule:hover .schedule__wrapper {
-  display: block;
-}
-  
 .schedule__btn {
-  display: block;
-  color: rgba(236, 30, 121, 0.7);
+  display: inline-block;
   font-family: OpenSans, sans-serif;
+  color: rgba(236, 30, 121, 0.7);
   font-weight: bold;
   text-decoration: underline;
   font-size: 14px;
-  margin-left: auto;
-
-}
-
-/* .schedule__block {
-  position: relative;
+  text-align: right;
   }
-
-.schedule__wrapper {
-  position: absolute;
-  background: #fff;
-  padding: 11px;
-  width: 163px;
-  text-align: left;
-  font-size: 14px;
-  top: 100%;
-  display: none;
-  margin-top: 20px;
-}
-
-.schedule__wrapper:before {
-  content: "";
-  display: block;
-  height: 30px;
-  left: 0;
-  right: 0;
-  top: -29px;
-  position: absolute;
-}
-
-.schedule__work {
-  font-weight: bold;
-  color: #ec1e79;
-}
-
-.schedule__lanch {
-  font-weight: 300;
-  color: #221f1f;
-  /* line-height: 1.48; */
-} */
 
 .schedule:hover .schedule__btn {
   color: #7faad4;
 }
 
-
-/* .schedule__wrapper {
+.schedule__wrapper {
+  height: 0px;
+  transition: height 0.2s;
   overflow: hidden;
-  height: 0;
-  width: 100px;
-  transition: height 0.5s;
+  width: 225px;
+  position: absolute;
+  top: 20px;
+  right: 3px;
 }
 
 .schedule__block {
-  margin-top: 15px;
+  height: 74%;
+  width: 79%;
+  margin-left: 45px;
+  margin-top: 16px;
+  background-color: #fff;
   position: relative;
-  height: 100%;
-  width: 100%;
-  background-color: red;
+  font-size: 14px;
+  padding: 10px 19px;
+  box-shadow: 0 0 8px rgba(71, 78, 88, 0.4);
+  opacity: 0.95;
+  text-align: left;
 }
 
-.schedule__block:before {
-  content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
-    top: -15px;
-    right: 0;
-    border-style: solid;
-    border-width: 0 15px 15px 15px;
-    border-color: transparent transparent #cac transparent;
+.schedule__block::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -15px;
+  right: 0;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+  border-width: 0 15px 15px 15px;
 }
 
 .schedule:hover .schedule__wrapper {
-  height: 100px;
-} */
+  height: 78px;
+}
+
+.schedule__work {
+  color: #ec1e79;
+  font-weight: bold;
+}
