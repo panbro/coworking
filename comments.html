@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -43,11 +43,52 @@
 
         <!--Сайдбар-->
 
+        <!-- <div class="container aside__container"> -->
         <aside class="sidebar">
-          <nav class="menu">
+          <!--Скидка-->
+          <section class="discount">
+            <div class="container discount__container">
+              <div class="discount__text">Для наших новых клиентов мы предлагаем <span class="discount-text_pink">скидку
+                  50%</span> на первый день! Приходите, чтобы лично оценить преимущества коворкинга «Воркадиум»!</div>
+            </div>
+          </section>
+          <div class="socials">
+            <div class="socials__display">Наши социальные сети</div>
+            <div class="socials__links">
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a href="#" class="socials__names socials__vk">
+                    мы во вконтакте</a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__names socials__fb">
+                    мы в фейсбуке</a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__names socials__g-plus">
+                    мы в гугл плюсе+</a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__names socials__twitter">
+                    мы в твиттере</a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__names socials__mail">
+                    написать нам на почту</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+        <!-- </div> -->
+
+        <div class="page-content">
+
+          <!-- раздел nav -->
+          <!-- <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="./index.html" class="menu__link menu__link_main">
+                <a href="./main.html" class="menu__link menu__link_main">
                   Главная </a>
               </li>
               <li class="menu__item menu__item_active">
@@ -59,13 +100,30 @@
                   Тарифы </a>
               </li>
             </ul>
+          </nav> -->
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item ">
+                <a href="./main.html" class="menu__link">
+                  <div class="menu__icon menu__icon_main"></div>
+                  <div class="menu__title">Главная</div>
+                </a>
+              </li>
+              <li class="menu__item menu__item_active">
+                <div class="menu__icon menu__icon_feed"></div>
+                <span class="menu__title">Отзывы</span>
+              </li>
+              <li class="menu__item">
+                <a href="./prices.html" class="menu__link">
+                  <div class="menu__icon menu__icon_wallet"></div>
+                  <div class="menu__title">Тарифы</div>
+                </a>
+              </li>
+            </ul>
           </nav>
-        </aside>
-
-        <div class="page-content">
 
           <!--Хлебные крошки-->
-          <nav class="breadcr">
+          <!-- <nav class="breadcr">
             <ul class="breadcr__list">
               <li class="breadcr__item">
                 <a href="#" class="breadcr__link">Главная</a>
@@ -74,7 +132,7 @@
                 <span class="breadcr__link">Отзывы</span>
               </li>
             </ul>
-          </nav>
+          </nav> -->
 
           <!--Раздел "Отзывы"-->
 
@@ -187,90 +245,86 @@
             </div>
           </section>
 
+
+
+
+
+          <!--Форма отзыва-->
+          <div class="form__wrapper">
+            <div class="container form__container">
+              <section class="form-section">
+                <div class="form">
+
+                  <form action="#" name="form" class="form__elem">
+                    <h2 class="title form-review__title">Оставить отзыв</h2>
+                    <div class="form__content">
+
+                      <div class="form__row">
+                        <label class="form__block">
+                          <div class="form__block-title">Ваше имя</div>
+                          <input type="text" class="form__input" name="user-name" placeholder="Андрей" />
+                        </label>
+                        <label class="form__block">
+                          <div class="form__block-title">Ссылка на профиль VK</div>
+                          <input type="text" class="form__input" name="vk-link" placeholder="vk.com/example" />
+                        </label>
+                      </div>
+                      <div class="form__row">
+                        <label class="form__block">
+                          <div class="form__block-title">Текст отзыва</div>
+                          <textarea type="text" class="form__input form__input--textarea" name="textarea" placeholder="Мне понравилось"
+                            rows="5"></textarea>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="form__buttons">
+
+                      <div class="form__controls-area">
+                        <div class="form-controlls">
+                          <div class="form-controlls__title">Отображать фото в отзыве?</div>
+                          <div class="form-controlls__buttons">
+
+                            <label class="form-controlls__btn">
+                              <input type="radio" name="answer" class="form-controlls__real-radio">
+                              <div class="form-controlls__fake-radio"></div>
+                              <div class="form-controlls__btn-title">Да</div>
+                            </label>
+
+                            <label class="form-controlls__btn">
+                              <input type="radio" name="answer" class="form-controlls__real-radio">
+                              <div class="form-controlls__fake-radio"></div>
+                              <div class="form-controlls__btn-title">Нет</div>
+                            </label>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form__buttons-area">
+                        <!-- вторая кнопка
+                  <div class="form__buttons-item">
+                  <button type="reset" class="btn btn--bg-white btn--no-icon">Очистить</button>
+                </div> -->
+                        <div class="form__buttons-item">
+                          <button type="submit" class="btn">Отправить</button>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </form>
+                </div>
+              </section>
+            </div>
+          </div>
+
         </div>
         <!--Закрывает page-content>-->
       </div>
       <!--Закрывает container-->
     </div>
     <!--Закрывает wrapper__content-->
-
-    <!--Скидка-->
-    <section class="discount">
-      <div class="container discount__container">
-        <div class="discount__text">Для наших новых клиентов мы предлагаем <span class="discount-text_pink">скидку
-            50%</span> на первый день! Приходите, чтобы лично оценить преимущества коворкинга «Воркадиум»!</div>
-      </div>
-    </section>
-
-    <!--Форма отзыва-->
-    <div class="form__wrapper">
-      <div class="container form__container">
-        <section class="form-section">
-          <div class="form">
-
-            <form action="#" name="form" class="form__elem">
-              <h2 class="title form-review__title">Оставить отзыв</h2>
-              <div class="form__content">
-
-                <div class="form__row">
-                  <label class="form__block">
-                    <div class="form__block-title">Ваше имя</div>
-                    <input type="text" class="form__input" name="user-name" placeholder="Андрей" />
-                  </label>
-                  <label class="form__block">
-                    <div class="form__block-title">Ссылка на профиль VK</div>
-                    <input type="text" class="form__input" name="vk-link" placeholder="vk.com/example" />
-                  </label>
-                </div>
-                <div class="form__row">
-                  <label class="form__block">
-                    <div class="form__block-title">Текст отзыва</div>
-                    <textarea type="text" class="form__input form__input--textarea" name="textarea" placeholder="Мне понравилось"
-                      rows="5"></textarea>
-                  </label>
-                </div>
-              </div>
-
-              <div class="form__buttons">
-
-                <div class="form__controls-area">
-                  <div class="form-controlls">
-                    <div class="form-controlls__title">Отображать фото в отзыве?</div>
-                    <div class="form-controlls__buttons">
-
-                      <label class="form-controlls__btn">
-                        <input type="radio" name="answer" class="form-controlls__real-radio">
-                        <div class="form-controlls__fake-radio"></div>
-                        <div class="form-controlls__btn-title">Да</div>
-                      </label>
-
-                      <label class="form-controlls__btn">
-                        <input type="radio" name="answer" class="form-controlls__real-radio">
-                        <div class="form-controlls__fake-radio"></div>
-                        <div class="form-controlls__btn-title">Нет</div>
-                      </label>
-
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form__buttons-area">
-                  <!-- вторая кнопка
-                  <div class="form__buttons-item">
-                  <button type="reset" class="btn btn--bg-white btn--no-icon">Очистить</button>
-                </div> -->
-                  <div class="form__buttons-item">
-                    <button type="submit" class="btn">Отправить</button>
-                  </div>
-                </div>
-
-              </div>
-
-            </form>
-          </div>
-        </section>
-      </div>
-    </div>
 
 
 
@@ -286,51 +340,13 @@
               Бродников Сергей</span></div>
         </div>
 
-        <div class="footer__col">
-          <div class="footer__col footer__col_align-center">
-            <a href="#" class="logo"><img src="./img/logo/logo.png" alt="Логотип Коворкинг" class="logo__image"></a>
-          </div>
+        <div class="footer__col footer__col_align-right">
+          <a href="#" class="logo"><img src="./img/logo/logo.png" alt="Логотип Коворкинг" class="logo__image"></a>
         </div>
 
-        <div class="footer__col footer__col-socials">
-          <div class="socials">
-            <div class="socials__display">Наши социальные сети</div>
-            <div class="socials__links">
-              <ul class="socials__list">
-                <li class="socials__item">
-                  <a href="#" class="socials__names socials__vk">
-                    <!-- <img src="./img/icons/socials/vk.png" alt="мы во вконтакте"
-                      class="socials__vk-img"> -->
-                    Vkontake</a>
-                </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__names socials__fb">
-                    <!-- <img src="./img/icons/socials/fb.png" alt="мы в фейсбуке"
-                      class="socials__fb-img"> -->
-                    Facebook</a>
-                </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__names socials__g-plus">
-                    <!-- <img src="./img/icons/socials/google.png" alt="мы в гугл плюсе"
-                      class="socials__g-plus-img"> -->
-                    Google+</a>
-                </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__names socials__twitter">
-                    <!-- <img src="./img/icons/socials/twitter.png" alt="мы в твиттере"
-                      class="socials__twitter-img" -->
-                    >Twitter</a>
-                </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__names socials__mail">
-                    <!-- <img src="./img/icons/socials/mail.png" alt="написать нам на почту"
-                      class="socials__mail-img"> -->
-                    Mail</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <!-- <div class="footer__col footer__col-socials">
+       
+        </div> -->
       </div>
     </footer>
   </div>

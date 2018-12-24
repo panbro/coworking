@@ -1,7 +1,3 @@
-/* .footer__col .footer__col-logo {
- align-self: center; 
-} */
-
-/* .footer__col-logo-img {
-  align-self: center;
-} */
+.logo {
+  display: block;
+}

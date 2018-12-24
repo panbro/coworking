@@ -1,19 +1,28 @@
+.partners {
+  border: 1px solid #e8e9ed;
+  margin-bottom: 10%;
+}
+
 .partners__list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 43px;
+  margin-bottom: 10%;
 }
 
 .partners__item {
   /* width: 33.3%; */
   flex: 1 0 220px;
-  margin-bottom: 50px;
+  margin-bottom: 14%;
+}
+
+.partners__item:last-child {
+  margin-bottom: 0;
 }
 
 .partners__link {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .partners__logo {
@@ -24,9 +33,11 @@
   min-width: 100%;
   min-height: 100%;
   filter: grayscale(100%);
+  transition: 0.5s;
 }
 
 .partners__logo-pic:hover {
+  transition: 0.5s;
   content: "";
   filter: grayscale(0);
 }

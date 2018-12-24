@@ -30,15 +30,12 @@
   margin-right: 22px;
 }
 
-/* .footer__col-logo {
-  justify-content: center;
-} */
-
 .footer__col-author {
   margin-left: 20px;
   line-height: 1.2em;
 }
 
-.footer__col_align-center {
-  justify-content: center;
+.footer__col_align-right {
+justify-content: flex-end;
 }
+

@@ -1,6 +1,6 @@
 .discount {
   width: 100%;
-  margin-bottom: 57px;
+  margin-bottom: 26px;
   background-image: url(../../img/decor/pattern.png);
   background-repeat: center center no-repeat;
   background-color: #27273e;
@@ -8,8 +8,7 @@
 }
 
 .discount__container {
-  max-width: 620px;
-  height: 174px;
+  width: 100%;
   display: flex;
 }
 
@@ -19,6 +18,8 @@
   color: #fff;
   font-size: 18px;
   line-height: 1.67em;
+  padding: 25px 10px;
+  text-align: center;
 }
 
 .discount-text_pink {

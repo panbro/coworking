@@ -9,11 +9,6 @@
   font-size: 14px;
 }
 
-.mainpage__pagination {
-  margin-bottom: 69px;
-  width: 887px;
-}
-
 .pagination__display {
   display: inline-block;
   font-family: 'Roboto', Helvetica, sans-serif;
@@ -39,6 +34,7 @@ li .pagination__link {
 }
 
 .pagination__link {
+  text-align: center;
   font-weight: bold;
 }
 
@@ -58,13 +54,17 @@ li .pagination__link {
 }
 
 .pagination__link_active {
-  color: #ec1e79;
+  
   width: 25px;
   height: 25px;
   line-height: 25px;
   background-color: #27273e;
   border-radius: 3px;
   display: inline-block;
+}
+
+.pagination__link_active .pagination__link {
+  color: #ec1e79;
 }
 
 .pagination__link:hover {

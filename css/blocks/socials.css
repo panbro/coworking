@@ -5,78 +5,57 @@
 }
 
 .socials__display {
-  color: white;
-  text-align: right;
-  margin-bottom: 7px;
+  text-align: center;
+  
+}
+
+.socials__list {
+  text-align: center;
+}
+
+.socials__item {
+  position: relative;
+  margin-right: 25px;
+}
+.socials__item:last-child {
+  margin-right: 0;
 }
 
 .socials__names {
-  position: relative;
-}
-.socials__names {
-  background: #d4d4d8;
-  /* margin-top: 7px; */
+  position: absolute;
   margin-right: 6px;
   display: inline-block;
-  vertical-align: middle;
+  content:"";
   width: 20px;
   height: 20px;
-  border-radius: 50%;
-  font-size: 0;
-}
-
-.socials__names:before {
-  display: inline-block;
-  content:"";
-  width: 15px;
-  height: 15px;
-  background-image: url('../../img/icons/socials/vk.png');
   background-repeat: no-repeat;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 2px;
   vertical-align: middle;
+  transition: .2s;
+  border-radius: 50%;
+  font-size: 0;
+  background-image: url('../../img/icons/socials/socials-sprite.png');
 }
 
-.socials__vk:before {
-  background-image: url('../../img/icons/socials/vk.png');
+.socials__vk {
+  background-position: -64px -4px;
+}
+.socials__fb {
+  background-position: -4px -8px;
+}
+.socials__g-plus {
+  background-position: -130px -5px;
+}
+.socials__twitter {
+  background-position: -32px -5px;
+}
+.socials__mail {
+  background-position: -95px -5px;
 }
 
-.socials__fb:before {
-  background-image: url("../../img/icons/socials/fb.png");
-}
-
-.socials__g-plus:before {
-  background-image: url("../../img/icons/socials/google.png");
-}
-
-.socials__twitter:before {
-  background-image: url("../../img/icons/socials/twitter.png");
-}
-
-.socials__mail:before {
-  background-image: url("../../img/icons/socials/mail.png");
-}
-
-/* .socials__names img[class$="img"] {
-  margin-left: 4px;
-  display: inline-block;
-  vertical-align: middle;
-  transform: translate(0, 65%);
-}
-
-.socials__vk-img {
-  transform: translate(0, 95%) !important;
-}
-
-.socials__fb-img {
-  margin-left: 6.5px !important;
-  transform: translate(0, 25%)  !important;
-} */
-
-.socials__names:hover {
+.socials__item:hover .socials__names {
   background-color: #ec1e79;
 }
 

@@ -1,96 +1,150 @@
-.sidebar {
-  display: flex;
-  width: 18%;
+.menu {
+  width: 100%;
+  /* display: flex; */
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .menu__list {
-  display: flex;
-  flex-direction: column;
-  margin-top: 4px;
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
 }
-
-.menu__link {
-  display: inline-block;
+.menu__title {
   color: #ec1e79;
-  text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 0.1em;
   font-weight: bold;
+  text-align: left;
+  transition: .3s; 
+  display: inline-block;
+}
+
+.menu__link {
+  text-decoration: none;
 }
 
 .menu__item {
-  margin-bottom: 28px;
+  margin-bottom: 15px;
+  margin-right: 91px;
 }
 
-.menu__link:hover {
+.menu__item_in-header {
+  margin-top: 4px;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__item:hover .menu__title {
   color: #000;
+  transition: .3s;
 }
 
-.menu__link:before {
-  content: "";
+.menu__item:hover {
+ cursor: pointer;
+}
+
+.menu__icon {
+  position: relative;
   display: inline-block;
-  background: center center no-repeat;
-  vertical-align: top;
-  width: 22px;
+  vertical-align: middle;
+  width: 20px;
   height: 18px;
+  padding: 3px;
   margin-right: 14px;
-  margin-left: 19px;
 }
 
-.menu__link:after {
+.menu__icon:after {
   content: "";
-  display: inline-block;
-  background: center center no-repeat;
-  vertical-align: top;
-  width: 23px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
   height: 18px;
-  margin-left: -72%;
+  opacity: 1;
+  transition: .3s;
 }
 
-.menu__item_active .menu__link {
+.menu__icon:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 18px;
+  opacity: 0;
+  transition: .3s;
+}
+
+.menu__icon:after, .menu__icon:before {
+  background-image: url(../../img/icons/menu/menu-sprite.png);
+}
+.menu__icon_main:after{
+  background-position: -47px -10px;
+}
+.menu__icon_main:before,
+.menu__item_active .menu__icon_main:before {
+  background-position: -10px -10px;
+}
+
+.menu__icon_feed:after,
+.menu__item_in-header .menu__icon_feed:before {
+  background-position: -278px -10px;
+}
+.menu__icon_feed:before,
+.menu__item_active .menu__icon_feed:before {
+  background-position: -238px -10px;
+}
+
+.menu__icon_wallet:after,
+.menu__item_in-header .menu__icon_wallet:before {
+  background-position: -160px -10px;
+}
+.menu__icon_wallet:before,
+.menu__item_active .menu__icon_wallet:before {
+  background-position: -121px -10px;
+}
+
+.menu__item_in-header .menu__icon_feed:after {
+  background-position: -318px -10px;
+}
+.menu__item_in-header .menu__icon_wallet:after {
+  background-position: -199px -10px;
+}
+
+.menu__item:hover .menu__icon:after,
+.menu__item_active .menu__icon:after,
+.menu__item_in-header .menu__icon_wallet:before {
+  opacity: 0;   
+  transition: .3s;
+}
+.menu__item:hover .menu__icon:before,
+.menu__item_active .menu__icon:before {
+  opacity: 1;   
+  transition: .3s;
+}
+
+
+.menu__item_in-header .menu__title {
+  color: #fff;
+}
+
+.menu__item_active .menu__title {
   color: #000;
 }
 
-.menu__link:after,
-.menu__link {
-  transition: 0.5s ease-out;
+.menu__item_in-header.menu__item_active .menu__icon_main:after {
+  background-position: -47px -10px;
+  opacity: 1;
+}
+.menu__item_in-header.menu__item_active .menu__title,
+.menu__item_in-header:hover .menu__title {
+  color: #ec1e79;
+  text-decoration: underline;
 }
 
-.menu__link:hover:after {
-  opacity: 0;
-}
 
-.menu__link_main:after {
-  background-image: url('../../img/icons/menu/main.png');
-}
-
-.menu__link:after {
-  background-color: white;
-}
-
-.menu__link_main:before,
-.menu__link_main:hover:before,
-.menu__item_active .menu__link_main:after {
-  background-image: url('../../img/icons/menu/main-active.png');
-}
-
-.menu__link_feed:after {
-  background-image: url('../../img/icons/menu/feed.png');
-}
-
-.menu__link_feed:before,
-.menu__link_feed:hover:before,
-.menu__item_active .menu__link_feed:after {
-  background-image: url('../../img/icons/menu/feed-active.png');
-}
-
-.menu__link_wallet:after {
-  background-image: url('../../img/icons/menu/wallet.png');
-}
-
-.menu__link_wallet:before,
-.menu__link_wallet:hover:before,
-.menu__item_active .menu__link_wallet:after {
-  background-image: url('../../img/icons/menu/wallet-active.png');
-}

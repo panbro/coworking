@@ -2,7 +2,6 @@
 margin-bottom:12px;
 }
 .breadcr__item {
-  /* display: inline-block; */
   vertical-align: middle;
   font-size: 14px;
   font-weight: 300;
@@ -14,14 +13,12 @@ margin-bottom:12px;
 .breadcr__link,
 .breadcr__separator {
   color: #ec1e79;
-  /* display: inline-block; */
   vertical-align: middle;
   
 }
 
 .breadcr__link {
   text-decoration: none;
-  /* border-bottom: 1px solid #f000f0; */
   border-bottom: 1px solid rgba(236, 30, 121, 0.2);
   
 }

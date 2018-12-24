@@ -1,13 +1,12 @@
 .section-banner {
   background: #27273e;
-  margin-bottom: 56px;
+  margin-bottom: 1.5%;
 }
 
 .banner {
   display: flex;
-  height: 359px;
+  height: 393px;
   background: #27273e;
-  margin-top: -36px;
   justify-content: center;
 }
 
@@ -15,4 +14,5 @@
   align-items: flex-start;
   height: 359px;
   background: #27273e;
+  height: 100%;
 }
