@@ -10,7 +10,6 @@
 }
 
 .partners__item {
-  /* width: 33.3%; */
   flex: 1 0 220px;
   margin-bottom: 14%;
 }

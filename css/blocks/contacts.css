@@ -52,6 +52,7 @@
   box-shadow: 0 0 8px rgba(71, 78, 88, 0.4);
   opacity: 0.95;
   text-align: left;
+  border-radius: 3px;
 }
 
 .schedule__block::before {

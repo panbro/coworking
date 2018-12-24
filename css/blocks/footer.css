@@ -37,5 +37,6 @@
 
 .footer__col_align-right {
 justify-content: flex-end;
+margin-right: 2%;
 }
 

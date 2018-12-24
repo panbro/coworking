@@ -43,9 +43,10 @@
 
         <!--Сайдбар-->
 
-        <!-- <div class="container aside__container"> -->
         <aside class="sidebar">
+
           <!--Скидка-->
+
           <section class="discount">
             <div class="container discount__container">
               <div class="discount__text">Для наших новых клиентов мы предлагаем <span class="discount-text_pink">скидку
@@ -80,27 +81,11 @@
             </div>
           </div>
         </aside>
-        <!-- </div> -->
 
         <div class="page-content">
 
           <!-- раздел nav -->
-          <!-- <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a href="./main.html" class="menu__link menu__link_main">
-                  Главная </a>
-              </li>
-              <li class="menu__item menu__item_active">
-                <span class="menu__link menu__link_feed">
-                  Отзывы </span>
-              </li>
-              <li class="menu__item">
-                <a href="./prices.html" class="menu__link menu__link_wallet">
-                  Тарифы </a>
-              </li>
-            </ul>
-          </nav> -->
+
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item ">
@@ -121,18 +106,6 @@
               </li>
             </ul>
           </nav>
-
-          <!--Хлебные крошки-->
-          <!-- <nav class="breadcr">
-            <ul class="breadcr__list">
-              <li class="breadcr__item">
-                <a href="#" class="breadcr__link">Главная</a>
-              </li>
-              <li class="breadcr__item breadcr__item_active">
-                <span class="breadcr__link">Отзывы</span>
-              </li>
-            </ul>
-          </nav> -->
 
           <!--Раздел "Отзывы"-->
 
@@ -211,22 +184,22 @@
 
             <!-- Pagination-->
 
-            <div class="pagination">
+            <div class="pagination pagination_align-left">
               <div class="pagination__display">Страница 1 из 7</div>
               <div class="pagination__controls">
                 <ul class="pagination__list">
                   <li class="pagination__prev"> <a class="pagination__link" href="#">&lt;</a>
                   </li>
-                  <li class="pagination__item">
-                    <a href="#" class="pagination__link pagination__link_active">1</a>
+                  <li class="pagination__item pagination__link_active">
+                    <a href="#" class="pagination__link">1</a>
                   </li>
-                  <li class="pagination__item">
+                  <li class="pagination__item ">
                     <a href="#" class="pagination__link">2</a>
                   </li>
                   <li class="pagination__item">
                     <a href="#" class="pagination__link">3</a>
                   </li>
-                  <li class="pagination__item">
+                  <li class="pagination__item ">
                     <a href="#" class="pagination__link">4</a>
                   </li>
                   <li class="pagination__item">
@@ -245,76 +218,67 @@
             </div>
           </section>
 
-
-
-
-
           <!--Форма отзыва-->
+
           <div class="form__wrapper">
             <div class="container form__container">
               <section class="form-section">
-                <div class="form">
 
-                  <form action="#" name="form" class="form__elem">
-                    <h2 class="title form-review__title">Оставить отзыв</h2>
-                    <div class="form__content">
+                <form action="#" name="form" class="form__elem">
+                  <h2 class="title form-review__title">Оставить отзыв</h2>
+                  <div class="form__content">
 
-                      <div class="form__row">
-                        <label class="form__block">
-                          <div class="form__block-title">Ваше имя</div>
-                          <input type="text" class="form__input" name="user-name" placeholder="Андрей" />
-                        </label>
-                        <label class="form__block">
-                          <div class="form__block-title">Ссылка на профиль VK</div>
-                          <input type="text" class="form__input" name="vk-link" placeholder="vk.com/example" />
-                        </label>
-                      </div>
-                      <div class="form__row">
-                        <label class="form__block">
-                          <div class="form__block-title">Текст отзыва</div>
-                          <textarea type="text" class="form__input form__input--textarea" name="textarea" placeholder="Мне понравилось"
-                            rows="5"></textarea>
-                        </label>
+                    <div class="form__row">
+                      <label class="form__block">
+                        <div class="form__block-title">Ваше имя</div>
+                        <input type="text" class="form__input" name="user-name" placeholder="Андрей" />
+                      </label>
+                      <label class="form__block">
+                        <div class="form__block-title">Ссылка на профиль VK</div>
+                        <input type="text" class="form__input" name="vk-link" placeholder="vk.com/example" />
+                      </label>
+                    </div>
+                    <div class="form__row">
+                      <label class="form__block">
+                        <div class="form__block-title">Текст отзыва</div>
+                        <textarea type="text" class="form__input form__input--textarea" name="textarea" placeholder="Мне понравилось"
+                          rows="5"></textarea>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form__buttons">
+
+                    <div class="form__controls-area">
+                      <div class="form-controls">
+                        <div class="form-controls__title">Отображать фото в отзыве?</div>
+                        <div class="form-controls__buttons">
+
+                          <label class="form-controls__btn">
+                            <input type="radio" name="answer" class="form-controls__real-radio">
+                            <div class="form-controls__fake-radio"></div>
+                            <div class="form-controls__btn-title">Да</div>
+                          </label>
+
+                          <label class="form-controls__btn">
+                            <input type="radio" name="answer" class="form-controls__real-radio">
+                            <div class="form-controls__fake-radio"></div>
+                            <div class="form-controls__btn-title">Нет</div>
+                          </label>
+
+                        </div>
                       </div>
                     </div>
 
-                    <div class="form__buttons">
-
-                      <div class="form__controls-area">
-                        <div class="form-controlls">
-                          <div class="form-controlls__title">Отображать фото в отзыве?</div>
-                          <div class="form-controlls__buttons">
-
-                            <label class="form-controlls__btn">
-                              <input type="radio" name="answer" class="form-controlls__real-radio">
-                              <div class="form-controlls__fake-radio"></div>
-                              <div class="form-controlls__btn-title">Да</div>
-                            </label>
-
-                            <label class="form-controlls__btn">
-                              <input type="radio" name="answer" class="form-controlls__real-radio">
-                              <div class="form-controlls__fake-radio"></div>
-                              <div class="form-controlls__btn-title">Нет</div>
-                            </label>
-
-                          </div>
-                        </div>
+                    <div class="form__buttons-area">
+                      <div class="form__buttons-item">
+                        <button type="submit" class="btn">Отправить</button>
                       </div>
-
-                      <div class="form__buttons-area">
-                        <!-- вторая кнопка
-                  <div class="form__buttons-item">
-                  <button type="reset" class="btn btn--bg-white btn--no-icon">Очистить</button>
-                </div> -->
-                        <div class="form__buttons-item">
-                          <button type="submit" class="btn">Отправить</button>
-                        </div>
-                      </div>
-
                     </div>
 
-                  </form>
-                </div>
+                  </div>
+
+                </form>
               </section>
             </div>
           </div>
@@ -325,31 +289,28 @@
       <!--Закрывает container-->
     </div>
     <!--Закрывает wrapper__content-->
-
-
-
-    <!--Здесь Футер-->
-    <footer class="footer">
-      <div class="container footer__container">
-
-        <div class="footer__col footer__col-author">
-          <div class="work-author">
-            Сделано с любовью и старанием на курсе «HTML + CSS» в
-            <a href="https://loftschool.com/" class="work-author__loftschool-link">LoftSchool.</a> Автор работы: <span
-              class="work__author-name">
-              Бродников Сергей</span></div>
-        </div>
-
-        <div class="footer__col footer__col_align-right">
-          <a href="#" class="logo"><img src="./img/logo/logo.png" alt="Логотип Коворкинг" class="logo__image"></a>
-        </div>
-
-        <!-- <div class="footer__col footer__col-socials">
-       
-        </div> -->
-      </div>
-    </footer>
   </div>
+
+
+
+  <!--Здесь Футер-->
+  <footer class="footer">
+    <div class="container footer__container">
+
+      <div class="footer__col footer__col-author">
+        <div class="work-author">
+          Сделано с любовью и старанием на курсе «HTML + CSS» в
+          <a href="https://loftschool.com/" class="work-author__loftschool-link">LoftSchool.</a> Автор работы: <span
+            class="work__author-name">
+            Бродников Сергей</span></div>
+      </div>
+
+      <div class="footer__col footer__col_align-right">
+        <a href="#" class="logo"><img src="./img/logo/logo.png" alt="Логотип Коворкинг" class="logo__image"></a>
+      </div>
+
+    </div>
+  </footer>
 
 </body>
 
