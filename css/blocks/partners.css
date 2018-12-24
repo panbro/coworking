@@ -1,6 +1,6 @@
 .partners {
   border: 1px solid #e8e9ed;
-  margin-bottom: 10%;
+  margin-bottom: 25px;
 }
 
 .partners__list {
@@ -21,7 +21,6 @@
   margin-top: 20px;
 }
 
-
 .partners__link {
   display: flex;
   align-items: center;
@@ -37,7 +36,7 @@
   min-height: 100%;
   filter: grayscale(100%);
   transition: 0.5s;
-  transform: scale(.86); 
+  transform: scale(.9); 
 }
 
 .partners__logo-pic:hover {
