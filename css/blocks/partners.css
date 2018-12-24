@@ -11,12 +11,16 @@
 
 .partners__item {
   flex: 1 0 220px;
-  margin-bottom: 14%;
+  margin-bottom: 38px;
 }
 
 .partners__item:last-child {
   margin-bottom: 0;
 }
+.partners__item:first-child {
+  margin-top: 20px;
+}
+
 
 .partners__link {
   display: flex;
@@ -33,10 +37,11 @@
   min-height: 100%;
   filter: grayscale(100%);
   transition: 0.5s;
+  transform: scale(.86); 
 }
 
 .partners__logo-pic:hover {
   transition: 0.5s;
+  filter: grayscale(0%);
   content: "";
-  filter: grayscale(0);
 }

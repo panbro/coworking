@@ -2,14 +2,17 @@
   text-align: right;
   display: block;
   position: relative;
-  /* margin-top: -11px; */
+  height: 100%;
 }
 
 .contacts__phone {
+  margin-top: 6px;
   color: white;
   font-weight: bold;
   text-decoration: none;
   font-size: 21px;
+  line-height: 1;
+  display: block;
 }
 
 .schedule {

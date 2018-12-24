@@ -22,6 +22,7 @@ align-items: center;
 
 .header__col_align-right {
   justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .header__col_nav {
@@ -29,4 +30,8 @@ align-items: center;
   width: 100%;
   display: flex;
   align-items: flex-start;
+}
+
+.header_prices-layout { /*костыль для соответствия с макетом*/
+  margin-bottom: 31px;
 }

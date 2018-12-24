@@ -47,3 +47,14 @@
 li.reviews__item:last-child {
   border: none;
 }
+
+.reviews__date_comments-layout {/*костыль для соотвествия с макетом*/
+  line-height: 0.4;
+}
+.reviews__author_comments-layout {/*костыль для соотвествия с макетом*/
+  margin-top: -7px;
+}
+
+.reviews__text_comments-layout {/*костыль для соотвествия с макетом*/
+  margin-top: 7px;
+}

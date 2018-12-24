@@ -1,3 +1,7 @@
+.tariffs {
+  margin-bottom: 72px;
+}
+
 .tariff {
   display: flex;
   flex-wrap: wrap;
@@ -7,16 +11,24 @@
 
 .tariff__item {
   text-align: center;
-  margin-bottom: 9%;
-  margin-right: 19px;
+  margin-bottom: 84px;
+  margin-right: 21px;
   min-height: 350px;
   max-width: 273px;
+}
+
+.tariff__item:nth-child(n+4) {
+  margin-bottom: 0;
+}
+
+.tariff__item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .tariff__thumb-wrapper {
   display: flex;
   min-height: 167px;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 
 .tariff__thumb {
@@ -87,10 +99,11 @@ transition: .5s;
 .tariff__price {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 0.5em;
+  margin-bottom: 6px;
 }
 
 .tariff__text {
   font-size: 14px;
   font-weight: 300;
+  line-height: 1.5;
 }

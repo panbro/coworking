@@ -8,7 +8,7 @@
   display: inline-flex;
   flex-direction: row;
   width: 100%;
-}
+ }
 .menu__title {
   color: #ec1e79;
   text-transform: uppercase;

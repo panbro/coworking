@@ -5,6 +5,7 @@
   background-repeat: center center no-repeat;
   background-color: #27273e;
   min-height: 174px;
+  margin-top: 2px;/*костыль для соответствия с макетом*/
 }
 
 .discount__container {
@@ -18,7 +19,7 @@
   color: #fff;
   font-size: 18px;
   line-height: 1.67em;
-  padding: 25px 10px;
+  padding: 25px 10px 24px;
   text-align: center;
 }
 

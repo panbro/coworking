@@ -1,8 +1,12 @@
+.news-section {
+  margin-bottom: 5px;
+}
+
 .news__item {
   display: flex;
   border-bottom: 2px solid #f5f5f5;
   align-items: flex-start;
-  margin-top: 34px;
+  margin-top: 30px;
 }
 
 .news__thumb {
@@ -17,7 +21,6 @@
 
 li.news__item:last-child {
   border: none;
-  margin-bottom: 23px;
 }
 
 .news__thumb-pic {
@@ -36,16 +39,19 @@ li.news__item:last-child {
 .news__date {
   font-weight: 300;
   font-size: 14px;
-  margin-bottom: 55px;;
+  margin-bottom: 2px;;
   color: #656464;
   vertical-align: top;
   line-height: 1.42;
+  display: block;
 }
 
 .news__author {
   font-weight: bold;
   font-size: 18px;
   line-height: 1.42;
+  display: block;
+  margin-bottom: 7px;
 }
 
 .news__text {

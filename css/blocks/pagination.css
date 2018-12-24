@@ -72,3 +72,8 @@ li .pagination__link {
   color:  rgb(236, 30, 121);
   transition: color 0.2s;
 }
+
+.pagination_align-left { /*костыль для соответствия с макетом*/
+  margin-left: -3%;
+}
+

@@ -5,9 +5,7 @@
   font-size: 49px;
 }
 
-.reviews__title {
-  margin-bottom: 30px;
-}
+
 
 .news__title {
 margin-bottom: 60px;
@@ -25,10 +23,33 @@ margin-bottom: 60px;
   font-size: 18px;
   text-transform: uppercase;
   text-align: center;
-  margin: 8% auto 13%;
+  margin: 8% auto 9%;
  }
 
  .title_lastnews {
    margin-top: -2%;
    margin-bottom: 7%;
  }
+ 
+ .feature__title_aside {
+  display: flex;
+  justify-content: center;
+  font-family: "GothamPro", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  margin-bottom: 3%;
+}
+
+.reviews__title {/*костыль для соотвествия с макетом*/
+  margin-top: -8px;
+  margin-bottom: -1px;
+}
+
+.title_prices-layout {/*костыль для соотвествия с макетом*/
+  margin-bottom: 35px;
+  margin-top: -8px;
+}
+
